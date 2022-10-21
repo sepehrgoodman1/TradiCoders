@@ -1,0 +1,126 @@
+.WrapperAllProjects{
+    padding: 25px 100px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.ProjectBox{
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.074);
+    border-radius: 8px;
+    outline: 2px solid rgba(0, 0, 0, 0.033);
+    transition: all 0.1s;
+    height: fit-content;
+}
+.ProjectBox:hover{
+    box-shadow: 3px 10px 10px rgba(4, 0, 72, 0.129);
+}
+.ImgPerson{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.P_ImageAndName{
+    display: flex;
+    align-items: center;
+}
+.NameProducer{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.DetailWorks{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.P_DetailWorks{
+    margin-right: 17px;
+}
+.DeskProject{
+    line-height: 25px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.FooterProjects{
+    width: 100%;
+    background-color:#c0c0c024 ;
+    border-radius:0 0 8px 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.C_ProjectBox{
+    padding: 30px;
+}
+.ReadMoreText{
+    display: none;
+}
+.ReadMoreText_Show{
+    display: inline;
+}
+.ReadMoreBtn{
+    color: #3772ff;
+    cursor: pointer;
+}
+.OrderProject{
+    border: none;
+    background-color: #3772ff;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 3px 5px 7px #00000029;
+    transition: all 0.3s;
+}
+.OrderProject:hover{
+    background-color: #1a5fff;
+}
+.OrderProject:active{
+    background-color: #1041b3;
+}
+.P_PriceText{
+    text-align: center;
+    line-height: 25px;
+}
+.PriceText{
+    font-size: 12px;
+    color: gray;
+}
+.Price{
+    color: #676767;
+    font-weight: 600;
+    font-size: 14px;
+}
+.Tag{
+    font-weight: 600;
+    color: #676767;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.P_Tags{
+    display: flex;
+}
+
+
+/* For Mobile */
+@media screen and (max-width:960px){
+    .WrapperAllProjects{
+        gap: 30px;
+        grid-template-columns:  auto;
+    }
+    .WrapperAllProjects {
+        padding: 24px;
+    }
+    .DetailWorks{
+        font-size: 16px;
+    }
+    .NameProducer{
+        font-size: 14px;
+    }
+}

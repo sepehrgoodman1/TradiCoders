@@ -1,0 +1,54 @@
+
+@font-face{
+    font-family: IranSans;
+    src: url("../assets/fonts/Iranian\ Sans.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: IranSans;
+}
+.TextDecNone{
+    text-decoration: none;
+}
+.Flex1{
+    flex: 1;
+}
+.CursorP{
+    cursor: pointer;
+}
+
+/* Primary Color */
+.PrimaryColor{
+    color: #3772ff ;
+}
+.PrimaryBG{
+    background-color: #3772ff ;
+}
+
+/* Secondary Color */
+.SecondaryColor{
+    color: #00c9ff;
+}
+.SecondaryBG{
+    background-color: #00c9ff;
+}
+
+
+.OrangeBG{
+    background-color: #FFAC1C	;
+}
+
+.PosRel{
+    position: relative;
+}
+.DisNone{
+    display: none;
+}
+
+/* Pulick Elements */
+.Br16{
+    border-radius: 16px !important;
+}
