@@ -1,0 +1,4 @@
+EA structure
+
+This logic can detect cross between 2 moving average* 
+MACD Logic can do trade if MACD Cross Specific Level in macd indicator

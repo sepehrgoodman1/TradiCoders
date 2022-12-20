@@ -1,0 +1,5 @@
+EA structure
+This function can calculate lot size according to loss pip and risk percent. so when stop loss will hit, you will lost x% of balance
+Function can release 3 type of alerts
+
+RSI Structure

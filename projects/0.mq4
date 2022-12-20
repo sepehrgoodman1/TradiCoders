@@ -1,0 +1,3 @@
+void CheckSignal(string sym)
+{
+}

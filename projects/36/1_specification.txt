@@ -1,0 +1,3 @@
+EA structure
+This logic can detect cross between 2 moving average* 
+This logic can detect cross of Stochastic and overbought or oversold level

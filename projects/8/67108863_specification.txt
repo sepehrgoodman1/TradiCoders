@@ -1,0 +1,27 @@
+EA structure
+0
+Indicator
+//Indicator body
+
+This function can calculate lot size according to loss pip and risk percent. so when stop loss will hit, you will lost x% of balance
+
+Exit All trader with Stop Loss in USD that you set in setting
+Function can release 3 type of alerts
+
+5
+
+MA_3 Structure
+MACD Structure
+5
+RSI Structure
+ATR Structure
+Bollinger Bands Structure
+Parabolic SAR Structure
+ZigZag Structure
+Fractal Structure
+HeikenAshi Structure
+ADX Structure
+This Function can calculate custom indicator value of specific custom indicator in specific buffer and bar
+This function can send string information to FTP, FTP login must be set in Meta trader tools option tab.
+This function can send string information to Email, Email login must be set in Meta trader tools option tab.
+This function can take screen shot and save it by specific file name, width, height and align are adjustable as input parameters

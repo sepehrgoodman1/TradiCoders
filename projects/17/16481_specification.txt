@@ -1,0 +1,5 @@
+EA structure
+Exit All trader with Stop Loss in USD that you set in setting
+Exit All Trades at Take Profit In USD that you set in setting
+ATR Structure
+-

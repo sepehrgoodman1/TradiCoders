@@ -1,17 +1,39 @@
 
-@font-face{
-    font-family: IranSans;
-    src: url("../assets/fonts/Iranian\ Sans.ttf");
+
+body , button {
+    font-family: IranYekan ;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    direction: rtl;
-    font-family: IranSans;
+h1, h2, h3, h4, h5, h6{
+    font-family: IranYekan;
 }
+
+.NormalLink {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+/* Our Main Colors */
+:root {
+    --secondary: #301934 !important;
+    --primary: #3772ff !important;
+    --mainBg : #f9f5f0;
+    --NumberOneBg : #1793d1;
+    --NumberOneBgHover : #00a4f6;
+    --SpecialColor:#0abf53;
+    --SpecialColorHover:#00ca51;
+    --FadeColor:rgba(0, 0, 0, 0.035);;
+    --mainBlack:#333333;
+    --TitleFont:IranYekan;
+    --RegFont:IranSans;
+    --EngFont: 'Poppins', sans-serif;
+  }
+  td{
+    vertical-align: middle !important;
+  }
 .TextDecNone{
     text-decoration: none;
+}
+.Rtl{
+    direction: rtl;
 }
 .Flex1{
     flex: 1;
@@ -20,22 +42,29 @@
     cursor: pointer;
 }
 
+/* Main Color */
+.MainBgColor{
+    background-color: #171c22;
+}
+
 /* Primary Color */
 .PrimaryColor{
-    color: #3772ff ;
+    color: var(--NumberOneBg) ;
 }
 .PrimaryBG{
-    background-color: #3772ff ;
+    background-color: var(--NumberOneBg) ;
 }
 
 /* Secondary Color */
 .SecondaryColor{
-    color: #00c9ff;
+    color: #301934 !important;
 }
 .SecondaryBG{
-    background-color: #00c9ff;
+    background-color: #301934 !important;
 }
-
+.SellColor{
+    color: #56C649;
+}
 
 .OrangeBG{
     background-color: #FFAC1C	;
@@ -45,10 +74,214 @@
     position: relative;
 }
 .DisNone{
-    display: none;
+    display: none !important;
 }
 
 /* Pulick Elements */
 .Br16{
     border-radius: 16px !important;
+}
+
+/* Start Spaces */
+.Mb10{
+    margin-bottom: 10px;
+}
+.Mb15{
+    margin-bottom: 15px;
+}
+.Mb30{
+    margin-bottom: 30px;
+}
+.Mb100{
+    margin-bottom: 100px;
+}
+
+.Mt20{
+    margin-top: 20px !important;
+}
+.Mt30{
+    margin-top: 30px;
+}
+.Mt100{
+    margin-top: 100px;
+}
+
+.Ml20{
+    margin-left: 20px !important;
+}
+
+
+.P10{
+    padding: 10px;
+}
+.Plr10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Pb100{
+    padding-bottom: 100px !important;
+}
+.Ptb5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Ptb15{
+    padding: 15px 0 !important;
+}
+/* End Spaces */
+.H100{
+    height: 100%;
+}
+.M_H100{
+    min-height: 100vh !important;
+}
+
+/* Start Fonts */
+.Fs12{
+    font-size: 12px !important;
+}
+.Fs14{
+    font-size: 14px !important;
+}
+.Fs16{
+    font-size: 16px !important;
+}
+.Fs18{
+    font-size: 18px !important;
+}
+.Fs20{
+    font-size: 20px;
+}
+.Fs24{
+    font-size: 24px !important;
+}
+.Fs30{
+    font-size: 30px !important;
+}
+
+
+.Fw500{
+    font-weight: 500 !important;
+}
+.Fw600{
+    font-weight: 600 !important;
+}
+.TitleFont{
+    font-family: var(--TitleFont) !important;
+}
+.RegFont{
+    font-family: var(--RegFont) !important;
+}
+.TextCenter{
+    text-align: center;
+}
+.EngFont{
+    font-family: var(--EngFont) ;
+}
+.LineH25{
+    line-height: 25px;
+}
+/* End Fonts */
+
+/* Background Colors */
+.BgSpecialColor{
+    background-color: var(--SpecialColor);
+}
+.MainBgColor{
+    background-color: var(--NumberOneBg) !important;
+}
+.BgOrange{
+    background-color: #FFA500 !important;
+}
+
+/* Background Colors */
+.SpecialColor{
+    color: var(--SpecialColor);
+}
+.RedColor{
+    color: red;
+}
+.GrayColor{
+    color: rgba(0, 0, 0, 0.44);
+}
+.ColorWhite{
+    color: white !important;
+}
+.Op7{
+    opacity: 0.7;
+}
+.ObjectFitCover{
+    object-fit: cover;
+}
+.W100{
+    width: 100% !important;
+}
+
+.Center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Ltr{
+    direction: ltr;
+}
+.TextEnd{
+    text-align: end;
+}
+.BgGrayFade{
+    background-color: rgb(0 0 0 / 2%);
+    height: 100%;
+}
+.MainBlackBg{
+    background-color: var(--mainBlack) !important;
+}
+.TextDecNone{
+    text-decoration: none !important;
+}
+.TextStart{
+    text-align: start;
+}
+.H_Auto{
+    height: auto !important;
+}
+.Z100{
+    z-index: 100;
+}
+.BgWhite{
+    background-color: white !important;
+}
+.Op5{
+    opacity: 0.5;
+}
+.DisBlock{
+    display: block;
+}
+pre{
+    font-family: IranYekan;
+}
+.D_ltr{
+    direction: ltr;
+  }
+@media screen and (max-width: 960px){
+    .MbTextCenter{
+        text-align: center;
+    }
+    .M_Mt30{
+        margin-top: 30px;
+    }
+    .M_Mt0{
+        margin-top: 0;
+    }
+    .M_Mt0{
+        margin-top: 0;
+    }
+    .Mb_P0{
+        padding: 0 !important;
+    }
+    .MbDisNone{
+        display: none;
+    }
+    .M_Mt20{
+        margin-top: 20px;
+    }
 }

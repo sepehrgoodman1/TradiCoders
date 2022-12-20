@@ -1,0 +1,2420 @@
+.TopNavigation {
+  padding: 0 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  /* background-image: linear-gradient(to right, #2a333f, #181e27); */
+  color: #301934;
+  z-index: 1000;
+  box-shadow: 0 5px 21px #0000000d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* color: #CFD5DA; */
+}
+.LognInNav {
+  display: flex;
+  align-items: center;
+}
+
+.ItemNavbar {
+  padding: 30px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+}
+.User {
+  font-size: 20px;
+  position: relative;
+  top: -16px;
+}
+.ItemNavbarNew {
+  padding: 30px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+  color: var(--NumberOneBg);
+}
+.ItemNavbarNew1 {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+  color: var(--NumberOneBg);
+}
+
+.ItemNavbar:hover {
+  color: #1b1212;
+}
+.P_ItemNavbar {
+  display: flex;
+  align-items: center;
+}
+.ItemNavbar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #1b1212;
+  top: 0px;
+  left: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 2px 7px #000000a1;
+}
+.ItemNavbar:hover::after {
+  transform: scale(1, 1);
+}
+
+.ItemNavbar_Atcive {
+  color: #1b1212;
+}
+.ItemNavbar_Atcive::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #1b1212;
+  top: 0px;
+  left: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+  box-shadow: 0px 2px 7px #000000a1;
+  transform: scale(1, 1);
+}
+
+.MainLogo {
+  width: 100px;
+}
+.IconNav {
+  position: relative;
+  top: 3px;
+}
+.P_Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserTypeDesk {
+  font-size: 14px;
+  position: absolute;
+  top: 44px;
+
+  left: 50%;
+  opacity: 0.9;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/* Start Test Area */
+.WrapperItems {
+  margin-top: 20px;
+  padding: 0 100px;
+  direction: ltr;
+}
+.RowOfItems {
+  direction: ltr;
+}
+.Box {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  background-color: #7676763d;
+  color: white;
+  display: block;
+  margin-left: 50px;
+  margin-bottom: 0;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+.BoxSquare {
+  padding: 40px;
+  border-radius: 12px;
+  background-image: linear-gradient(45deg, #1d2428, #2b3840c2);
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+.ChooseItemText {
+  font-size: 20px;
+  text-align: center;
+}
+.SelectBox {
+  margin-top: 30px;
+}
+.Box > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 40px;
+}
+.Box2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: #00c9ff;
+  cursor: pointer;
+  display: inline-block;
+}
+.Box2 > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header {
+  margin-bottom: 72px;
+}
+.And {
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  height: fit-content;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px;
+  z-index: 5;
+  cursor: pointer;
+}
+.Or {
+  padding: 10px 12px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  height: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  z-index: 5;
+  cursor: pointer;
+}
+.ConfirmItemBtn {
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.OurModal {
+  padding: 30px !important;
+  border-radius: 20px !important;
+}
+.MainPicture {
+  width: calc(100vw - 22px);
+  object-fit: cover;
+  height: 75vh;
+  box-shadow: 5px 5px 18px #0000002e;
+}
+.Slider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14vw;
+  width: 40vw;
+  background-color: #1793d1d6;
+  padding: 25px 30px;
+  color: white;
+}
+.TitleSilder {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.DeskSlider {
+  font-size: 20px;
+  line-height: 25px;
+}
+.StartWork {
+  border: none;
+  padding: 8px 30px;
+  background-color: white;
+  color: var(--SpecialColor);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.StartWork .ArrowLeft {
+  position: relative;
+  top: 2px;
+  right: 8px;
+  transition: all 0.3s;
+}
+.StartWork:hover {
+  opacity: 0.85;
+}
+.StartWork:active {
+  opacity: 1;
+}
+.SectionOfWorks {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+.ConfirmOrder {
+  width: 150px;
+  height: 150px;
+  background-color: var(--mainBg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  border: 3px solid var(--NumberOneBg);
+  color: var(--NumberOneBg);
+  font-weight: 600;
+  margin: 0 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+/* .MyProjects {
+  width: 150px;
+  height: 150px;
+  background-color: var(--mainBg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0 20px;
+  text-align: center;
+}
+.Jobs {
+  width: 150px;
+  height: 150px;
+  background-color: var(--mainBg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  border: 3px solid #702963;
+  color: #702963;
+  font-weight: 600;
+  margin: 0 20px;
+  text-align: center;
+} */
+.IconOrders {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.ConfirmOrder:hover {
+  background-color: var(--NumberOneBg);
+  color: white;
+}
+.Active {
+  background-color: var(--NumberOneBg);
+  color: white;
+}
+.NewProjects {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 30px;
+  margin: 60px 0 25px 0;
+  color: var(--secondary);
+}
+
+.DashLeft {
+  width: 10px;
+  height: 4px;
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  left: -5px;
+  background-color: var(--NumberOneBg);
+}
+.DashRight {
+  width: 10px;
+  height: 4px;
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  right: -5px;
+  background-color: var(--NumberOneBg);
+}
+
+.DashLeftSec {
+  width: 10px;
+  height: 4px;
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  left: -5px;
+  background-color: var(--NumberOneBg);
+}
+.DashRightSec {
+  width: 10px;
+  height: 4px;
+  position: relative;
+  display: inline-block;
+  bottom: 5px;
+  right: -5px;
+  background-color: var(--NumberOneBg);
+}
+
+.WrapperProjects {
+  padding: 0px 160px;
+  background-color: rgba(0, 0, 0, 0.034);
+}
+.SeeAllProjects {
+  margin-top: 20px;
+  padding: 8px 20px;
+  border: 2px solid var(--NumberOneBg);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--NumberOneBg);
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-bottom: 30px;
+}
+.SeeAllProjects:hover {
+  background-color: var(--NumberOneBg);
+  color: white;
+}
+
+.SabtsProjects {
+  margin-top: 10px;
+  padding: 5px 16px;
+  border: 2px solid var(--NumberOneBg);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+  color: var(--NumberOneBg);
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-bottom: 0px;
+}
+.SabtsProjects:hover {
+  background-color: var(--NumberOneBg);
+  color: white;
+}
+.SabtsProjectsLashi {
+  margin-top: 10px;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--SpecialColor);
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+  margin-bottom: 0px;
+}
+.SabtsProjectsLashi:hover {
+  background-color: var(--SpecialColorHover);
+}
+
+.IconTop2 {
+  position: relative;
+  top: 4px;
+}
+.AboutProject {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 23px;
+}
+
+.AboutProject > p {
+  width: 50%;
+}
+.TextArticles {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 30px;
+  margin: 20px 0 25px 0;
+  color: var(--secondary);
+}
+.Articles {
+  padding: 25px 160px;
+}
+
+.P_ImgArticle {
+  width: 100%;
+  height: 285px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.P_TypeArticle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: var(--FadeColor);
+  border-radius: 6px;
+  color: var(--secondary);
+}
+.P_ImgArticle > img {
+  width: 100%;
+  object-fit: cover;
+  height: inherit;
+  transition: all 0.3s;
+}
+
+.TypeArticle {
+  font-size: 14px;
+  font-weight: 600;
+}
+.WrapperArticle {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.TimeArticle {
+  font-size: 10px;
+}
+.TitleArticle {
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  margin: 17px 0 8px 0;
+  line-height: 24px;
+}
+.DeskTitle {
+  font-size: 17px;
+  line-height: 25px;
+}
+.ContinueArticle {
+  padding: 6px 20px;
+  border: 2px solid var(--NumberOneBg);
+  border-radius: 4px;
+  color: var(--NumberOneBg);
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s;
+  margin: 20px 0;
+}
+.ContinueArticle:hover {
+  color: white;
+  background-color: var(--NumberOneBg);
+}
+.IconFit {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+.Viwer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+.ShapeX {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #0000000a;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 20px;
+}
+.P_Guide {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.IconGuide {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: var(--NumberOneBg);
+}
+.TitleGuide {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.DeskGuide {
+  font-size: 19px;
+  line-height: 24px;
+}
+.P_TitleGuide {
+  flex: 1;
+  max-width: 60%;
+}
+.VideoSection {
+  margin: 100px 0;
+}
+.VideoTitle {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.FormSelect {
+  margin-top: 10px !important;
+}
+.FormSelect:focus {
+  outline: 2px solid var(--NumberOneBg) !important;
+  box-shadow: none !important;
+}
+.InputOrder {
+  padding: 10px;
+  height: 40px;
+  border: none;
+  width: 100%;
+  border: 2px solid var(--NumberOneBg);
+  border-radius: 6px;
+}
+.P_Inputs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.OurInput {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.OurInput > label {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+.ExclamationMark {
+  padding: 4px 10px;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  border-radius: 50px;
+  color: var(--NumberOneBg);
+  background-color: #0000000a;
+  margin-left: 7px;
+  cursor: pointer;
+  position: relative;
+}
+.OrderForms {
+}
+.TextArea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 2px solid #eef0f3;
+}
+.TextArea:focus {
+  outline: 2px solid var(--NumberOneBg);
+}
+.File {
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: var(--NumberOneBg);
+  display: inline-block;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+}
+.MainFileInput {
+  position: absolute;
+  right: -10px;
+  opacity: 0;
+  bottom: -6px;
+  height: 100%;
+  transform: scale(2);
+  cursor: pointer;
+}
+.ConfirmBtn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: var(--SpecialColor);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  margin: 30px 20px 100px 0;
+}
+.ConfirmBtn:hover {
+  background-color: var(--SpecialColorHover);
+}
+.File > i {
+  position: relative;
+  right: 3px;
+}
+.DeatilsForms {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--NumberOneBg);
+  width: 250px;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 22px;
+  /* width: 100%; */
+  font-size: 15px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.ExclamationMark:hover .DeatilsForms {
+  display: block;
+  opacity: 1;
+}
+.DateArticle {
+  position: absolute;
+  left: 11px;
+  bottom: 7px;
+  font-size: 12px;
+}
+.ArticleList {
+  box-shadow: 3px 5px 12px #0000001f;
+  border-radius: 6px;
+}
+.ArticleList .P_ImgArticle > img {
+  transform: scale(1);
+  transition: all 3s ease;
+  border-radius: 6px 6px 0 0;
+}
+.ArticleList:hover .P_ImgArticle > img {
+  transform: scale(1.25);
+}
+
+.WrapperBodyArticle {
+  padding: 0 20px;
+}
+.DeskTitle {
+  padding-left: 20px;
+}
+.TagsArticle {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.466);
+  cursor: pointer;
+  display: inline-block;
+}
+.LinkTags {
+  color: rgba(0, 0, 0, 0.466);
+  text-decoration: none;
+}
+.SabtOrder {
+  display: inline-block;
+}
+.SabtOrder button {
+  border: 2px solid var(--SpecialColor);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--SpecialColor);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+.SabtOrder button:hover {
+  background-color: var(--SpecialColor);
+  color: white;
+}
+.P_GuideList {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.BoxIconGuide {
+  font-size: 29px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--NumberOneBg);
+}
+.TitleGuideList {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 13px;
+  color: var(--NumberOneBg);
+}
+.DeskGuide {
+  font-size: 17px;
+  margin-top: 15px;
+}
+.Guide {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 12px #0000000d;
+}
+.P_TitleGuideList {
+  flex: 1;
+  margin-right: 15px;
+}
+.GuidePage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.TitleQuestions {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--mainBlack);
+}
+.ItemNavbarNew1 span,
+.ItemNavbarNew .SpanHover {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.ItemNavbarNew1:hover span,
+.ItemNavbarNew:hover .SpanHover {
+  opacity: 1;
+}
+
+.CirleButtons {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Footer */
+.Footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  height: auto;
+  background-color: #add8e6;
+  position: relative;
+  margin-top: 100px;
+}
+.ImageCeforeFooter {
+  width: 100vw;
+  position: absolute;
+  top: -53px;
+  left: 0;
+}
+.LogoInFooter {
+  width: 250px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.SuccessFul {
+  width: 200px;
+}
+.P_ItemsFooter {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+.P_LogoInfooter {
+  flex: 2;
+  direction: ltr;
+}
+.Items_Footer {
+  font-size: 18px;
+  line-height: 25px;
+  transition: all 0.3s;
+  flex: 1;
+  text-align: start;
+}
+
+.Items_Footer > div {
+  cursor: pointer;
+  color: black;
+}
+.Items_Footer > div:hover {
+  color: white;
+}
+
+.P_SocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-size: 22px;
+}
+.P_IconSocial {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #296e85;
+}
+.P_ItemFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ItemFooter {
+  padding: 0px 12px;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.AllRights {
+  text-align: center;
+  margin: 20px;
+}
+.Inamad {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  width: 200px;
+}
+.LogoFooter {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  width: 200px;
+}
+
+/* Footer */
+
+.ScrollerProjects {
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #00000014;
+  height: auto;
+  background-color: white;
+  width: 330px;
+  margin-right: 20px;
+  margin-top: 23px;
+  height: 800px;
+  scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+.WrapperAllProjectsIndex {
+  padding: 25px 0px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.ItemInScrolProject {
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  box-shadow: 5px 5px 18px rgb(0 0 0 / 11%);
+  display: flex;
+  align-items: center;
+  border: 2px solid #00000014;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.ItemInScrolProject:hover {
+  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.181);
+  border: 2px solid var(--NumberOneBg);
+}
+.ItemInScrolProject:hover .TitleInScrollPro {
+  color: var(--NumberOneBg);
+}
+
+.TitleInScrollPro {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  word-wrap: break-word;
+  transition: all 0.3s;
+}
+
+.NameInScrollPro {
+  font-size: 15px;
+  color: black;
+  opacity: 0.7;
+  word-wrap: break-word;
+  transition: all 0.3s;
+}
+
+.ItemInScrolProject:hover .NameInScrollPro {
+  opacity: 1;
+}
+
+.PersonInScroll {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.P_TitleInScrollPro {
+  margin-right: 8px;
+  line-height: 23px;
+}
+.WrapperTwoArea {
+  display: flex;
+}
+
+/* width */
+.ScrollerProjects::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.ScrollerProjects::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Handle */
+.ScrollerProjects::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.ScrollerProjects::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.WrapperForums {
+  padding: 0px 160px;
+}
+.ForumText {
+  font-size: 30px;
+  padding-top: 20px;
+}
+.LogoPrograming {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.ForumItem {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.073);
+}
+.WrapperForumList {
+  margin-top: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.073);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 17px #0000001c;
+}
+.BodyForum {
+  background-color: #f0f8ff38;
+  min-height: 100vh;
+}
+.P_ImageAndQues {
+  display: flex;
+}
+.TitleForum {
+  font-size: 24px;
+}
+.TimePostForm {
+  font-size: 14px;
+  color: black;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.P_TitleForum {
+  margin-right: 15px;
+}
+.TopMessageForm {
+  opacity: 0.95;
+  color: black;
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.NumComments {
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.647);
+  margin-right: 85px;
+}
+.ForumArea {
+  display: flex;
+}
+.LeftForum {
+  width: 260px;
+  margin-right: 40px;
+}
+.TitleDiscution {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.TitleDiscution2 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.ItemDiscution {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  margin-bottom: 7px;
+}
+
+.NameOfDiscusser {
+  font-size: 18px;
+  margin-right: 12px;
+  position: relative;
+  bottom: 2px;
+}
+
+.NumDiscus {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.666);
+  font-weight: 500;
+  margin-right: 12px;
+}
+.LogoProgramingNew {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.TextAboutQuestion {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.LogoQusestionForum {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.LogoAnswerForum {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.TitleQues {
+  font-size: 28px;
+}
+.P_ImageQusrtion {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+.NameOfUser {
+  font-size: 20px;
+  color: black;
+}
+.P_NameOfUser {
+  position: relative;
+  bottom: 5px;
+}
+.TimeOfPost {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.7;
+}
+.BgForum {
+  background-color: white;
+  min-height: 100vh;
+  padding: 20px 60px;
+}
+.BannerQues {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background-color: var(--NumberOneBg);
+  color: white;
+  font-size: 16px;
+}
+.BannerAnswer {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 4px;
+  background-color: var(--SpecialColor);
+  color: white;
+  font-size: 14px;
+}
+.QuestionForum {
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #0000001c;
+}
+.NumLikes {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.IconArrows {
+  cursor: pointer;
+}
+.IconGreen {
+  color: var(--SpecialColor);
+  cursor: pointer;
+}
+.IconRed {
+  color: red;
+  cursor: pointer;
+}
+.P_ArrowQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: -40px;
+  top: -3px;
+}
+.AnswerArea {
+  padding: 10px 10px;
+  border-radius: 6px;
+  background-color: rgb(0 0 0 / 2%);
+  margin-top: 20px;
+}
+.P_ImgAnswer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ReplyText {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--NumberOneBg);
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+.Answer {
+  margin-top: 20px;
+  padding: 0 60px;
+  position: relative;
+}
+.C_Answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AnswerTime {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.518);
+  font-weight: 600;
+}
+.TextAnswer {
+  padding-right: 70px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.BestAnswer {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 12px;
+  background-color: rgba(0, 255, 0, 0.059);
+  color: var(--SpecialColor);
+  margin-right: 10px;
+}
+.MainModal {
+  border-radius: 12px !important;
+  border: none !important;
+  box-shadow: 10px 10px 18px #0000001f !important;
+}
+.CloseModal {
+  position: absolute;
+  left: 12px;
+  top: 19px;
+}
+.TitleModal {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.AuthorName {
+  font-size: 15px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.Taeed {
+  border-radius: 6px;
+  background-color: var(--NumberOneBg);
+  color: white;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+.Taeed:hover {
+  background-color: var(--NumberOneBgHover);
+}
+.Laghv {
+  border-radius: 6px;
+  background-color: rgb(169, 0, 0);
+  color: white;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+.Laghv:hover {
+  background-color: rgb(209, 0, 0);
+}
+.BgSlider {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: ltr;
+  padding: 10px 160px;
+  margin-top: 85px;
+}
+.TitleSlide {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.LeftContentMain {
+}
+.SliderImage {
+  width: 40vw;
+}
+.DeskSli {
+  font-size: 20px;
+  color: #303a48;
+  max-width: 95%;
+  line-height: 25px;
+}
+.Sabt_Project {
+  padding: 8px 20px 10px 20px;
+  border: none;
+  background-color: var(--SpecialColor);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Sabt_Project:hover {
+  background-color: var(--SpecialColorHover);
+}
+.Jobs {
+  padding: 8px 20px 10px 20px;
+  border: none;
+  background-color: var(--NumberOneBg);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.Jobs:hover {
+  background-color: var(--NumberOneBgHover);
+}
+.P_Sabt {
+  margin-top: 40px;
+}
+.P_DeskDeatils {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  display: flex;
+  justify-content: center;
+  padding: 0 160px;
+}
+.IconDev {
+  font-size: 30px;
+  color: var(--NumberOneBg);
+}
+.TitleWorker {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: var(--NumberOneBg);
+}
+.DeskWorker {
+  font-size: 18px;
+  line-height: 25px;
+}
+.C_Desk {
+  width: 400px;
+  margin: 0 10px;
+  padding: 20px;
+  /* background: #fbfbfb; */
+  border-radius: 8px;
+  box-shadow: 5px 5px 18px #00000014;
+}
+.LoadingImg {
+  z-index: 100000;
+  width: 130px;
+}
+.WaitingImg {
+  z-index: 100000;
+  width: 70px;
+}
+.BgLoading {
+  background-color: rgb(159 211 213);
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.P_LodImg {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.LoadingText {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+.HeaderOfArticles{
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.IconCheckMark{
+  width: 83px;
+    position: absolute;
+    top: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start ProjectPage Css */
+
+
+.WrapperAllProjects {
+  padding: 25px 0px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.ProjectBox {
+  background-color: white;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.074);
+  border-radius: 8px;
+  outline: 2px solid rgba(0, 0, 0, 0.033);
+  transition: all 0.1s;
+  height: fit-content;
+}
+.ProjectBox:hover {
+  box-shadow: 3px 10px 10px rgba(4, 0, 72, 0.129);
+}
+.ImgPerson {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.P_ImageAndName {
+  display: flex;
+  align-items: center;
+}
+.NameProducer {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+.DetailWorks {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.P_DetailWorks {
+  margin-right: 17px;
+}
+.DeskProject {
+  line-height: 25px;
+  margin-top: 15px;
+  font-size: 17px;
+}
+.FooterProjects {
+  width: 100%;
+  background-color: #c0c0c024;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.C_ProjectBox {
+  padding: 30px;
+}
+.ReadMoreText {
+  display: none;
+}
+.ReadMoreText_Show {
+  display: inline;
+}
+.ReadMoreBtn {
+  color: var(--NumberOneBg);
+  cursor: pointer;
+}
+.OrderProject {
+  border: none;
+  background-color: var(--NumberOneBg);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 3px 5px 7px #00000029;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.OrderProject:hover {
+  background-color: var(--NumberOneBgHover);
+}
+.OrderProject:active {
+  background-color: #1041b3;
+}
+.P_PriceText {
+  text-align: center;
+  line-height: 25px;
+}
+.PriceText {
+  font-size: 16px;
+  color: gray;
+}
+.Price {
+  color: #676767;
+  font-weight: 600;
+  font-size: 17px;
+}
+.Tag {
+  font-weight: 600;
+  color: #676767;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.P_Tags {
+  display: flex;
+}
+.Filters {
+  display: block;
+  margin: 30px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MainWrapper {
+  padding: 0 160px;
+}
+.ItemFilter {
+  padding: 10px 10px;
+  margin: 0 0 0 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.ItemFilter:hover {
+  color: #000000;
+}
+
+.ItemFilter::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #301934;
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+.ItemFilter:hover::after {
+  transform: scale(1, 1);
+}
+
+.ItemFilter_Atcive {
+  color: #301934;
+}
+.ItemFilter_Atcive::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #301934;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: scale(1, 1);
+}
+.InputSearch {
+  border: none;
+  padding: 0px 32px 15px 0px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.066);
+  width: 100%;
+  transition: all 0.3s;
+  background-color: transparent;
+  font-size: 16px;
+}
+.InputSearch:focus {
+  outline: none;
+  border-bottom: 1.5px solid var(--secondary);
+}
+.P_InputSearch {
+  position: relative;
+  width: 30%;
+}
+.SearchIcon {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  color: rgba(0, 0, 0, 0.634);
+}
+.LineFilter {
+  width: 100%;
+  height: 2px;
+  opacity: 0.3;
+  margin: 16px 0 8px 0;
+  background-color: #3019347d;
+}
+.BodyProjectDetail{
+  background-color: #F5F5F5;
+  padding: 30px 100px;
+}
+.MainWrapperPro{
+  display: flex;
+}
+
+.L_MainWrapperPro{
+  width: 300px;
+  margin-right: 20px;
+}
+.R_MainWrapperPro{
+  flex: 1;
+}
+.BgProjects{
+  width: 100%;
+  height: 250px;
+  background-image: url(../assets/images/BgProjects.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-position: center;
+  position: relative;
+}
+.LogoProgram{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  bottom: -70px;
+  right: 25px;
+}
+.WhiteAreaPro{
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 5px 5px 17px #00000014;
+}
+.P_DeskProj{
+  padding-right: 179px;
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.TitleProjNew{
+  font-size: 30px;
+}
+.P_TagsOfProj{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.TagsOfProj{
+  padding: 5px 8px;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.NameOfprojManager{
+  font-size: 14px;
+  opacity: 0.8;
+}
+.OrderPro{
+  background-color: var(--NumberOneBg);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+}
+.OrderPro:hover{
+  background-color: var(--NumberOneBgHover);
+}
+.WhiteAreaDesk{
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-top: 16px;
+    box-shadow: 5px 5px 17px #00000014;
+}
+.AboutPro{
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.AboutProDetail{
+  font-size: 18px;
+  line-height: 25px;
+}
+.WhiteAreaLeft{
+    background-color: white;
+    padding: 12px 20px 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 5px 5px 17px #00000014;
+}
+.TitleLeftProg{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.PricePro{
+  font-size: 16px;
+  line-break: anywhere;
+}
+.P_SampleProjects{
+  overflow-y: auto;
+  direction: ltr;
+  max-height: 330px;
+  padding-right: 5px;
+}
+
+/* width */
+.P_SampleProjects::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.P_SampleProjects::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+  border-radius:6px;
+}
+
+/* Handle */
+.P_SampleProjects::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+  border-radius:6px;
+}
+
+/* Handle on hover */
+.P_SampleProjects::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.FilterArticle{
+  margin-top: 25px;
+}
+.WrapperBestPriojects{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:20px;
+  margin: 20px 0;
+}
+.BestProject{
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.286);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+.BestProjImage{
+  width: 100%;
+  object-fit: cover;
+}
+.TiteBestProj{
+    font-size: 25px;
+    margin-bottom: 12px;
+    margin-top: 2px;
+    padding: 0 20px;
+}
+.PriceBest{
+  font-size: 20px;
+  padding: 0 20px;
+  margin: 15px 0;
+  color: var(--NumberOneBgHover);
+}
+.DeskBestProj{
+  padding: 0 20px;
+  text-align: center;
+  font-size: 17px;
+  color: #000000c7;
+}
+.BtnShowBest{
+  border: none;
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--NumberOneBg);
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.BtnShowBest:hover{
+  background-color: var(--NumberOneBgHover);
+}
+
+/* End ProjectPage Css */
+
+
+
+/* Start Login Css */
+
+
+
+.FormInput {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  padding: 0 10px;
+  margin-top: 10px;
+  outline: 2px solid #eef0f3;
+  border: none;
+}
+.FormInput:focus {
+  outline: 2px solid var(--NumberOneBg);
+}
+.LabelInput {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.P_Input {
+  margin-top: 20px;
+}
+.P_Input_Two {
+  margin-top: 20px;
+  margin-left:  10px;
+  margin-right:  10px;
+  flex: 1;
+}
+.P_WrapperForms {
+  width: 500px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 8px 8px 15px #0000002b;
+}
+.P_WrapperForms_Register{
+  width: 500px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 8px 8px 15px #0000002b;
+}
+
+
+
+
+
+
+.P_TwoInput{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* End Login Css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Desktop */
+@media screen and (min-width: 960px) {
+  .ToggleMenuButton {
+    display: none;
+  }
+  .P_Login {
+    display: none;
+  }
+  .ImgNav {
+    display: none;
+  }
+  .UserName,
+  .UserType {
+    display: none;
+  }
+  .P_ItemNavbar {
+    position: relative;
+    /* top: 50%; */
+    left: 65px;
+  }
+  .PriceInMobile {
+    display: none;
+  }
+}
+/* For Mobile */
+@media screen and (max-width: 960px) {
+  .WrapperAllProjectsIndex {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .P_ItemsFooter {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .LogoInFooter {
+    width: 125px;
+  }
+  .P_LogoInfooter {
+    margin-top: 35px;
+  }
+  .BgSlider {
+    height: 100%;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: unset;
+    height: fit-content;
+  }
+  .Header {
+    margin-bottom: 49px;
+  }
+  .ToggleMenuButton {
+  }
+  .IconToggle {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  .MainLogo {
+    width: 60px;
+  }
+  .P_ItemNavbar {
+    position: fixed;
+    display: block;
+    width: 60%;
+    right: -100vw;
+    background-color: white;
+    top: 0;
+    height: 100vh;
+    transition: all 0.3s;
+    overflow-y: auto;
+    border-left: 1px solid #3427371f;
+  }
+
+  .ItemNavbar {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #3427371f;
+  }
+  .LognInNav {
+    display: none;
+  }
+  .TextArticles {
+    font-size: 24px;
+  }
+  .ImgNav {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+  }
+  .P_ImgNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .UserName {
+    font-size: 14px;
+    text-align: center;
+  }
+  .UserType {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.199);
+  }
+  .CloseIcon {
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+  .ShowNav {
+    right: 0;
+  }
+  .P_ArrowQuestion {
+    right: -29px;
+  }
+  .WrapperItems {
+    padding: 0 24px;
+  }
+  .ItemNavbar::after {
+    height: 1px !important;
+    background-color: #301934;
+    box-shadow: 0px 2px 7px #00000078;
+  }
+
+  .ItemNavbar_Atcive::after {
+    height: 1px !important;
+    background-color: #301934;
+    box-shadow: 0px 2px 7px #00000078;
+  }
+  .PriceInMobile {
+    font-size: 12px;
+    padding: 5px 12px;
+    color: var(--primary);
+  }
+  .WrapperProjects {
+    padding: 0 24px;
+  }
+  .MainPicture {
+    width: 100%;
+    height: 65vh;
+  }
+  .Slider {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    transform: translateX(50%);
+    right: 50%;
+    width: 85%;
+    background-color: #1793d1d6;
+    padding: 25px 30px;
+    color: white;
+  }
+  .TitleSilder {
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
+  .DeskSlider {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .Slider {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    transform: translateX(50%);
+    right: 50%;
+    width: 85%;
+    background-color: #1793d1d6;
+    padding: 14px 16px;
+    color: white;
+  }
+  .StartWork {
+    font-size: 12px;
+  }
+  .ConfirmOrder {
+    width: 26vw;
+    height: 26vw;
+    margin: 0 8px;
+    font-size: 12px;
+  }
+  .ConfirmOrder i {
+    font-size: 18px;
+  }
+  .SectionOfWorks {
+    bottom: -35px;
+  }
+  .NewProjects {
+    margin-top: 0px;
+    font-size: 24px;
+  }
+
+  .AboutProject > p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .Articles {
+    padding: 0 24px;
+  }
+  .WrapperArticle {
+    grid-template-columns: auto;
+  }
+  .P_Guide {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .P_TitleGuide {
+    margin: 20px;
+    text-align: center;
+  }
+  .CirleButtons {
+    font-size: 16px;
+  }
+  .VideoSection {
+    margin-top: 50px;
+  }
+  .P_Inputs {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .OurInput {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .ConfirmBtn {
+    margin-right: 0;
+  }
+  .P_TitleGuide {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .TitleGuide {
+    font-size: 18px;
+  }
+  .VideoTitle {
+    font-size: 18px;
+  }
+  .DeatilsForms {
+    right: 0;
+    left: unset;
+    transform: translateX(0);
+  }
+  .SabtOrder button {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+  .P_GuideList {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .Guide {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 12px;
+  }
+  .LeftForum {
+    display: none;
+  }
+  .WrapperForums {
+    padding: 20px;
+  }
+  .NumComments {
+    margin-right: 0;
+  }
+  .P_ImageAndQues {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .TitleForum {
+    font-size: 21px;
+  }
+  .LogoPrograming {
+    width: 75px;
+    height: 75px;
+  }
+  .ForumItem {
+    position: relative;
+  }
+  .NumComments {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .BgForum {
+    padding: 10px 35px;
+  }
+  .TitleQues {
+    font-size: 22px;
+  }
+  .Answer {
+    padding: 10px;
+  }
+  .TextAnswer {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+  .P_ImgAnswer {
+    flex-direction: column;
+  }
+  .C_Answer {
+    flex-direction: column;
+  }
+  .QuestionForum {
+    text-align: center;
+  }
+  .P_ImageQusrtion {
+    flex-direction: column;
+  }
+  .NameOfUser,
+  .BestAnswer,
+  .AnswerTime {
+    margin-top: 12px;
+  }
+  .TextAnswer {
+    text-align: center;
+  }
+  .NumLikes {
+    font-size: 14px;
+  }
+  .ScrollerProjects {
+    height: 320px;
+    margin-right: 0;
+    width: 100%;
+  }
+  .WrapperTwoArea {
+    flex-direction: column;
+  }
+  .TitleSlide {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .SliderImage {
+    width: 100%;
+  }
+  .DeskSli {
+    text-align: center;
+  }
+  .P_DeskDeatils {
+    flex-direction: column;
+    padding: 24px;
+    overflow-x: hidden;
+    margin-top: 0px;
+  }
+  .C_Desk {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .DeskSli {
+    max-width: 100%;
+  }
+  .TitleSlide {
+    font-size: 28px;
+  }
+  .WrapperProjects {
+    overflow-x: hidden;
+  }
+  .ImageCeforeFooter {
+    top: -18px;
+  }
+  .P_ItemFooter {
+    flex-direction: column;
+  }
+  .Inamad {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 80px;
+    /* display: none; */
+  }
+  .LogoFooter {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 80px;
+    /* display: none; */
+  }
+  .WrapperBestPriojects{
+    grid-template-columns: auto;
+  }
+  .FilterArticle{
+    margin-top: 0;
+  }
+  .HeaderOfArticles{
+    margin-bottom: 25px;
+  }
+
+
+/* Start ProjectPage Css */
+
+  .WrapperAllProjects {
+    gap: 30px;
+    grid-template-columns: minmax(0, 1fr) ;
+  }
+  .MainWrapper {
+    padding: 24px;
+  }
+
+  .DetailWorks {
+    font-size: 20px;
+  }
+  .NameProducer {
+    font-size: 14px;
+  }
+  .Filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ItemFilter {
+    font-size: 16px;
+    padding: 10px 5px;
+    margin: 0 5px;
+  }
+  .P_InputSearch {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .MainWrapperPro{
+    flex-direction: column;
+  }
+  .BodyProjectDetail{
+    padding: 16px;
+  }
+  .P_DeskProj{
+    padding: 32px 20px  16px 20px;
+    flex-direction: column;
+
+  }
+  .L_MainWrapperPro{
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  .LogoProgram{
+    width: 75px;
+    height: 75px;
+    bottom: -35px;
+  }
+  .BgProjects{
+    height: 150px;
+  }
+  
+  .TitleProjNew {
+    font-size: 24px;
+  }
+  .OrderPro{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .WhiteAreaDesk{
+    text-align: center;
+  }
+  .L_MainWrapperPro{
+    text-align: center;
+  }
+/* End ProjectPage Css */
+
+
+
+.P_WrapperForms_Register{
+  width: 100%;
+}
+.NotAMember {
+  display: none;
+}
+.LoginToTardi {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+.LabelInput {
+  font-size: 16px;
+}
+
+
+
+.P_TwoInput{
+  flex-direction: column;
+}
+.P_Input_Two{
+  width: 100%;
+}
+
+
+
+}
+
+/* background: linear-gradient(45deg, #41EAFF, #8196A9); */

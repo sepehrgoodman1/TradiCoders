@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Articles</title>
+    <meta charset='utf-8'>
+     <script type='text/javascript'>
+        if (screen.width >= 950) {
+            document.getElementById('mobileweb').style.display='none';
+                document.getElementById('pcweb').style.display='block';
+                document.getElementById('content').style.margin='5% 5% 0 5%;';
+        }
+        if (screen.width <= 950) {
+            document.getElementById('mobileweb').style.display='block';
+                document.getElementById('pcweb').style.display='none';
+                document.getElementById('content').style.margin='17% 5% 0 5%;';
+        }
+    </script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: bold;
+            src: url('../../font/IRANSansWeb(FaNum)_Bold.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: 500;
+            src: url('../../font/IRANSansWeb(FaNum)_Medium.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: 300;
+            src: url('../../font/IRANSansWeb(FaNum)_Light.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: 200;
+            src: url('../../font/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: normal;
+            src: url('../../font/IRANSansWeb(FaNum).woff') format('woff');
+        }
+
+        *
+        {
+            box-sizing: border-box;
+            font-family: zarei;
+        }
+        body
+        {
+            direction: rtl;
+            overflow-x: hidden !important;
+        }
+        img
+        {
+            width:100% !important;
+            margin:15px !important;
+        }
+        a:hover
+        {
+            text-decoration: none !important;
+        }
+        .jumbotron {
+            margin-top: 1%;
+            background-color: #fff;
+            color: #303030;
+        }
+
+        #myInput {
+            width: 40%;
+            font-size: 16px;
+            padding: 7px 25px 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+
+        #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myUL li a {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin: 1px;
+        }
+
+        #myInput2 {
+            width: 40%;
+            font-size: 16px;
+            padding: 7px 25px 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+        #myUL2 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myUL2 li a {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin: 1px;
+        }
+
+        #myInput3 {
+            width: 40%;
+            font-size: 16px;
+            padding: 7px 25px 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+        #myUL3 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myUL3 li a {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+<!--again form-->
+<form action='' method='post' id='againform' style='background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(26, 22, 21); height: 350px; display: none; z-index: 5; position: fixed; top: 100px; width: 500px; margin: auto; left: 490px;'>
+    <div style='width: 500px;position: relative;border-radius: 15px 15px 0 0;padding: 10px;text-align: center;color: white;padding-bottom: 1px;bottom: 10px;border-bottom: 0.1px solid #000;background: #047570;'>
+        <div class='imgcontainer'>
+            <span style='font-size: 30px;color: white;' onclick='closeForm('againform')' class='close' title='Close Modal'>×</span>
+        </div>
+        <h1 style='text-align: center;color: #fff;'>سفارش</h1>
+    </div>
+    <div style='margin-left: 20px;text-align: right;'>
+        <div style='font-size: 20px;padding: 5px 15px 10px 0;'>
+            توضیحات :
+        </div>
+        <textarea name='' id='' style='width: 100%;margin-right: 10px;' rows='5'></textarea>
+    </div>
+    <div style='position: relative;top: 20px;right: 25px;' class='row'>
+        <div style='padding: 0 !important;width: 40%;text-align: center;background: #047570;border-radius: 5px;margin: 10px;border: 1px solid #005552;display: inline-block;' class='col-4 button--active'>
+            <button type='submit' class='btn' style='color: white;background: none;'>ثبت سفارش</button>
+        </div>
+        <div style='color: #707476;border: 1.3px solid;padding: 0 !important;width: 40%;text-align: center;margin: 10px;border-radius: 5px;display: inline-block;' class='col-4'>
+            <button type='button' class='btn cancel' onclick='closeForm('againform')' style='color: #707476;background: none;'>بستن</button>
+        </div>
+    </div>
+</form>
+<!--again form-->
+
+<!--login form-->
+<form action='index.php' method='post' id='loginform' style='background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid #014946; height: 350px; display: none; z-index: 5; position: fixed; top: 100px; width: 500px; margin: auto; left: 490px;'>
+    <div style='background: #047570;width: 500px;position: relative;border-radius: 15px 15px 0 0;padding: 10px;text-align: center;color: white;padding-bottom: 1px;bottom: 21px;border-bottom: 0.1px solid #000;'>
+        <div class='imgcontainer'>
+            <span style='font-size: 30px;color: white;' onclick='closeForm('loginform')' class='close' title='Close Modal'>×</span>
+        </div>
+        <h1 style='text-align: center;'>ورود</h1>
+    </div>
+    <div style='margin-left: 20px;text-align: right;'>
+        <label for='email' style='font-size: 20px;margin: 7px;margin-right: 40px;'><b style=''>: ایمیل</b><div></div></label><br>
+
+        <input type='text' id='emaillogin' required='' style='background:white;padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 85%;text-align: right;margin-right: 40px;' name='emaillogin' placeholder='ایمیل خود را وارد کنید'><br>
+
+
+        <label for='psw' style='font-size: 20px;margin: 7px;margin-right: 42px;'><b>: رمز ورود</b></label><br>
+
+        <input type='password' name='pswlogin' id='pswlogin' required' style='background:white;padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 85%;text-align: right;margin-right: 40px;' placeholder='رمز خود را وارد کنید'>
+
+    </div>
+    <div style='position: relative;top: 20px;right: 25px;' class='row'>
+        <div style='padding: 0 !important;width: 40%;text-align: center;background: #047570;border-radius: 5px;margin: 10px;border: 1px solid #014946;display: inline-block;' class='col-4 button--active'>
+            <button type='submit' class='btn' style='color: white;background: none;'>ورود</button>
+        </div>
+        <div style='color: #707476;border: 1.3px solid;padding: 0 !important;width: 40%;text-align: center;margin: 10px;border-radius: 5px;display: inline-block;' class='col-4'>
+            <button type='button' class='btn cancel' onclick='closeForm('loginform')' style='color: #707476;background: none;'>بستن</button>
+        </div>
+    </div>
+</form>
+<!--login form-->
+
+<!--signup form-->
+<form action='' method='post' id='signupform' style='display: none; background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: 500px; z-index: 5; position: fixed; top: 100px; width: 500px; margin: auto; left: 490px; border-radius: 15px; border: 1px solid #047570'>
+    <div class='container' style='width: 100%;background: #fff;border-radius:15px;'>
+        <div style='height:70px;background: #047570;width: 106.3%;position: relative;border-radius: 15px 15px 0 0;padding: 10px;padding-bottom: 10px;text-align: center;color: white;padding-bottom: 1px;margin-bottom: 10px;left: 15px;'>
+            <div class='imgcontainer'>
+                <span style='font-size: 30px;color: #5c6163;' onclick='closeForm('signupform')' class='close' title='Close Modal'>×</span>
+            </div>
+            <h1 style='margin: 0;color: white'>ثبت نام</h1>
+
+        </div>
+        <div style='margin-left: 10px'>
+            <div class='w3-row'>
+                <div>
+                    <input type='text' id='fname' name='namesignup' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' placeholder='' نام خود را وارد کنید'>
+                </div>
+
+                <div style='margin-bottom: 10px;'>
+                    <input type='text' id='lname' name='lastnamesignup' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' placeholder='نام خانوادگی خود را وارد کنید'>
+                </div>
+            </div>
+
+            <input type='hidden' name='lastuserid' id='lastuserid' value=''>
+
+            <div style='margin-bottom: 10px;'>
+                <input type='text' name='emailsignup' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' required' placeholder='ایمیل خود را وارد کنید'>
+            </div>
+
+            <div class='w3-row' style='position: relative;bottom: 10px'>
+                <div class='w3-col m5 l5' style='margin-right: 10px'>
+                    <input type='password' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 97%;margin: 5px;text-align: right;' name='pswsignup' required='' placeholder='رمز خود را وارد کنید'>
+                </div>
+
+                <div class='w3-col m5 l5'>
+                    <input type='password' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' name='pswsecondsignup' required' placeholder='تکرار رمز ورود'>
+                </div>
+
+                <div class='w3-col m5 l5'>
+                    <input type='phone' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' name='phonenumbersignup' required' placeholder='شماره موبایل'>
+                </div>
+            </div>
+            <div style='margin-left: 10px;text-align: right;'>
+                <label style='margin-right: 20px;'>
+                    <input type='checkbox' checked='checked' name='remember' style='float: right;margin: 5px;'>من را به یاد داشته باش</label>
+                <label style='margin-right: 20px;'>
+                    <input type='checkbox' checked='' name='newdev' style='float: right;margin: 5px;'>
+                    همکاری با تیم تریدیکدرز به عنوان توسعه دهندگان
+                </label>
+            </div>
+        </div>
+
+        <div class='clearfix w3-row' style='text-align: center;padding: 5px;position: relative;'>
+
+            <button type='submit' class='w3-col m5 l5 button--' style='color: white;border: 1px solid #047570;margin-left: 10px;padding: 5px;width: 35%;border-radius: 5px;background: #047570;'>ثبت نام</button>
+            <button type='button' class='w3-col m5 l5 button--active cancel' style='margin-right: 10px;padding: 5px;width: 30%;border-radius: 5px;border: 1px solid #047570;color: #707476;background: none;' onclick='closeForm('signupform')'>بستن</button></div>
+    </div>
+</form>
+<!--signup form-->
+
+<!--menu-->
+<div class='topnav' id='myTopnav' style='box-shadow: 0 3px 10px rgba(71,44,173,.2);padding: 10px;height: 60px;position: fixed;width: 100%;background: #fff;z-index: 10;top: 0;'>
+    <div class='row'>
+        <div id='pcweb' class='col-12' style='text-align:center;'>
+            <a href='../../index.php' style='margin: 5px;margin-right: 10px;border-radius: 5px;color: #444;background: none;border: none;' >خانه</a>
+            <a href='../../guide.php' style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >راهنما</a>
+            <a href='../../doneproject.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;'>برترین پروژه ها</button>
+            </a>
+            <a href='../../academy/index.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >آکادمی</button>
+            </a>
+            <a href='../../articles.php' style='margin: 5px;margin-right: 10px;color: #444;background: none;border: none;border-bottom:1px solid #344451;padding-bottom: 5px;'>کتابخانه</a>
+            <a href='../../developer.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >توسعه دهندگان</button>
+            </a>
+        </div>
+        <div id='mobileweb' class='col-12' style='text-align:center;display:none;'>
+            <a href='../../index.php' style='margin: 5px;margin-right: 10px;border-radius: 5px;color: #444;background: none;border: none;' >خانه</a>
+            <a href='../../articles.php' style='margin: 5px;margin-right: 10px;color: #444;background: none;border: none;border-bottom:1px solid #344451;padding-bottom: 5px;'>کتابخانه</a>
+            <a href='../../developer.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >توسعه دهندگان</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!--menu-->
+
+<!--Project List-->
+<div class='content' style='margin: 5% 5% 0 5%;'>
+    <div id='top-title' style='border: 1px solid #d2d2d2;padding: 20px 10px;border-radius: 10px;'>
+        <img src='../' alt='' style='width: 60px !important;height: 60px;border: 1px solid;border-radius: 50%;position: relative;right: 95%;display: inline-block;margin:0 !important;'>
+        <div id='title' style='margin: 10px;font-size: 26px;font-weight: bold;display: inline-block;'>
+            چرا به نقشه معاملات نیاز دارید ؟
+        </div>
+
+        <div style='width: 90%;margin: auto;margin-top: 20px;text-align: left;'>
+            
+
+            <button style='padding: 7px;background: none;border: 1px solid #344451;border-radius: 5px;color: #344451;margin:5px;margin-right: 30px;'>کد در آکادمی</button>
+            <button style='padding: 7px;background: none;border: 1px solid #344451;border-radius: 5px;color: #344451;margin:5px;'>سفارش ربات</button>
+        </div>
+    </div>
+
+    <div style='margin: 10px 0;border-radius: 10px;padding: 10px;'>
+    </div>
+</div>
+<!--Project List-->
+
+<script>
+    function tl_top1()
+    {
+        document.getElementById('tl_top1').style.background='#00404b';
+        document.getElementById('tl_top2').style.background='#00849a';
+        document.getElementById('tl_top3').style.background='#00849a';
+        document.getElementById('tl_top4').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_1').style.display='block';
+        document.getElementById('tl_2').style.display='none';
+        document.getElementById('tl_3').style.display='none';
+        document.getElementById('tl_4').style.display='none';
+    }
+    function tl_top2()
+    {
+        document.getElementById('tl_top2').style.background='#00404b';
+        document.getElementById('tl_top1').style.background='#00849a';
+        document.getElementById('tl_top3').style.background='#00849a';
+        document.getElementById('tl_top4').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_2').style.display='block';
+        document.getElementById('tl_1').style.display='none';
+        document.getElementById('tl_3').style.display='none';
+        document.getElementById('tl_4').style.display='none';
+    }
+    function tl_top3()
+    {
+        document.getElementById('tl_top3').style.background='#00404b';
+        document.getElementById('tl_top1').style.background='#00849a';
+        document.getElementById('tl_top2').style.background='#00849a';
+        document.getElementById('tl_top4').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_3').style.display='block';
+        document.getElementById('tl_1').style.display='none';
+        document.getElementById('tl_2').style.display='none';
+        document.getElementById('tl_4').style.display='none';
+    }
+    function tl_top4()
+    {
+        document.getElementById('tl_top4').style.background='#00404b';
+        document.getElementById('tl_top1').style.background='#00849a';
+        document.getElementById('tl_top2').style.background='#00849a';
+        document.getElementById('tl_top3').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_4').style.display='block';
+        document.getElementById('tl_1').style.display='none';
+        document.getElementById('tl_2').style.display='none';
+        document.getElementById('tl_3').style.display='none';
+    }
+    function Searchbox() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUL');
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display ='';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    function Searchbox2() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput2');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUL2');
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display ='';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    function Searchbox3() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput3');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUL3');
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display ='';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    function MProjectinfo()
+    {
+        document.getElementById('MProjectinfo').style.display='block';
+    }
+    function downloadinfo()
+    {
+        document.getElementById('downloadinfo').style.display='block';
+    }
+    function login()
+    {
+        document.getElementById('loginform').style.display='block';
+        document.getElementById('signupform').style.display='none';
+        document.getElementById('videoform').style.display='none';
+    }
+    function signup()
+    {
+        document.getElementById('signupform').style.display='block';
+        document.getElementById('loginform').style.display='none';
+        document.getElementById('videoform').style.display='none';
+    }
+    function video()
+    {
+        document.getElementById('videoform').style.display='block';
+        document.getElementById('loginform').style.display='none';
+        document.getElementById('signupform').style.display='none';
+    }
+    function OpenForm(v) {
+        document.getElementById(v).style.display = 'block';
+    }
+    function closeForm(v) {
+        document.getElementById(v).style.display = 'none';
+    }
+</script>
+</body>
+</html>

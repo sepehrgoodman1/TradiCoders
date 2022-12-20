@@ -1,0 +1,1058 @@
+/* Start Sepehr Code */
+.LogoProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LinksPages {
+  color: var(--mainBlack) !important;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.LinksPages:hover {
+  color: var(--NumberOneBg) !important;
+}
+.breadcrumb-item::before {
+  content: none !important;
+}
+.NavIcon {
+  font-size: 21px;
+  margin-right: 13px;
+}
+.P_Exit {
+  margin-left: 30px;
+  padding-left: 12px;
+}
+.P_Exit a {
+  font-size: 20px;
+  color: var(--mainBlack);
+  position: relative;
+  top: 8px;
+}
+.SpaceContent {
+  padding: 0 20px;
+}
+.LogoProfileAdmin {
+  position: relative;
+  right: 8px;
+}
+.IconSide {
+  font-size: 19px;
+  position: relative;
+  top: 3px;
+  left: 8px;
+}
+.FitAvailable {
+  width: -webkit-fill-available;
+}
+.BgRightSideSec {
+  background-color: var(--NumberOneBg) !important;
+  color: white !important;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  padding: 24px !important;
+}
+.BottomSide {
+  background: rgba(0, 0, 0, 0.1) !important;
+  padding: 10px 0 !important;
+  font-size: 14px !important;
+  color: white;
+}
+.BgLeftSideSec {
+  background-color: var(--SpecialColor) !important;
+  color: white !important;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  padding: 24px !important;
+}
+.sidebar {
+  scrollbar-width: 0 !important;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.OpensProjectText {
+  padding: 10px 10px 4px 0;
+  font-weight: 600;
+  font-size: 16px !important;
+}
+.Notification {
+  text-align: start !important;
+  padding: 10px !important;
+  /* direction: ltr; */
+  min-width: 320px !important;
+  width: 100% !important;
+  font-size: 14px !important;
+}
+.InputProfile {
+  padding: 10px;
+  height: 37px;
+  margin-top: 4px;
+  flex: 1;
+  border: none;
+  border: 2px solid #eef0f3;
+  border-radius: 6px !important;
+}
+.InputProfile:focus {
+  border: 2px solid var(--NumberOneBg);
+}
+.ButtonSInProfie {
+  font-size: 14px !important;
+  border: 2px solid var(--NumberOneBg) !important;
+  color: var(--NumberOneBg) !important;
+  transition: all 0.3s;
+  display: inline-block;
+  width: fit-content;
+}
+.ButtonSInProfie:hover {
+  background-color: var(--NumberOneBg) !important;
+  color: white !important;
+}
+.ButtonSInProfie_Active {
+  background-color: var(--NumberOneBg) !important;
+  color: white !important;
+}
+.CloseModalIcon {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.TitleUpFile {
+  width: 178px;
+  padding-right: 0;
+  float: right;
+  margin-top: 20px;
+}
+.BtnUpFileModal {
+  background-color: var(--NumberOneBg);
+  border-radius: 12px;
+  height: 40px;
+  color: white;
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.BtnUpFileModal:hover {
+  background-color: var(--NumberOneBgHover);
+}
+
+.BtnChargeModal {
+  background-color: var(--SpecialColor);
+  border-radius: 12px;
+  height: 40px;
+  color: white;
+  width: 100%;
+  border: none;
+  margin-top: 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.BtnChargeModal:hover {
+  background-color: var(--SpecialColorHover);
+}
+
+.BtnConfirmOrderModal:hover {
+  background-color: var(--NumberOneBg);
+}
+
+.BtnConfirmOrderModal {
+  background-color: var(--NumberOneBg);
+  border-radius: 12px;
+  height: 40px;
+  color: white;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.LabelTextArea {
+  width: 120px;
+  float: right;
+  position: relative;
+  left: 20px;
+}
+.Accounting {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+}
+.ChargeAccount {
+  background: var(--SpecialColor);
+  width: fit-content;
+  padding: 8px 20px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s;
+  margin-top: 0 !important;
+  margin-left: 1rem;
+  float: left;
+  border-radius: 6px;
+  box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.163);
+  border: none;
+}
+.ChargeAccount:hover {
+  background: var(--SpecialColorHover);
+}
+.harvestAccount {
+  outline: 1px solid var(--NumberOneBg);
+  background-color: white;
+  width: fit-content;
+  padding: 7px 20px;
+  color: var(--NumberOneBg);
+  transition: all 0.3s;
+  border-radius: 6px;
+  margin-top: 0;
+  float: left;
+}
+.harvestAccount:hover {
+  background-color: white !important;
+  color: var(--NumberOneBg) !important;
+}
+.modal {
+  z-index: 100000;
+}
+.LogOutBtn{
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+.navbar-nav{
+  padding-left: 35px;
+}
+.ModalAcounting {
+  background: linear-gradient(rgb(255 255 255), rgb(255, 255, 255)) !important;
+  border-radius: 12px !important;
+  padding:10px 25px !important;
+  height: 659px !important;
+  box-shadow: 5px 5px 20px 2px #0000001a !important;
+  border: 2px solid #0000001c !important;
+  width: 500px !important;
+  position: fixed !important;
+  height: fit-content !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-signin{
+  height: fit-content !important;
+}
+.LabelFormAcounting {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: black !important;
+  margin-bottom: 0 !important;
+}
+.FormInputProfile {
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 8px !important;
+  padding: 0 10px !important;
+  margin-top: 0px !important;
+  outline: 2px solid #eef0f3 !important;
+  border: none !important;
+  color: black !important;
+}
+.FormInputProfile:focus {
+  outline: 2px solid var(--NumberOneBg) !important;
+  padding: 0 10px !important;
+}
+.FormTextAreaProfile {
+  width: 100% !important;
+  height: 100px !important;
+  border-radius: 8px !important;
+  padding: 10px !important;
+  margin-top: 0px !important;
+  outline: 2px solid #eef0f3 !important;
+  border: none !important;
+  color: black !important;
+}
+.FormTextAreaProfile:focus {
+  outline: 2px solid var(--NumberOneBg) !important;
+  padding: 0 10px !important;
+}
+.CloseIcon {
+  font-size: 22px !important;
+  color: black !important;
+  position: absolute !important;
+  right: 15px !important;
+  top: 15px !important;
+}
+.ChargeAccountText {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.BtnChangeAccess {
+  background: white;
+  color: var(--NumberOneBg);
+  border: 2px solid var(--NumberOneBg);
+}
+.NewModal {
+  max-height: 60vh !important;
+  scrollbar-color: #555 #f1f1f1 !important;
+  scrollbar-width: thin !important;
+}
+
+/* width */
+.NewModal::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+/* Track */
+.NewModal::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+/* Handle */
+.NewModal::-webkit-scrollbar-thumb {
+  background: #888 !important;
+}
+
+/* Handle on hover */
+.NewModal::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
+.P_Harvest {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17px;
+  margin-top: 17px;
+}
+.TypeHarvest {
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.118);
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 6px;
+}
+.IconHarvest {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ActiveHarvest {
+  box-shadow: inset 0 0 3px var(--NumberOneBg);
+  color: var(--NumberOneBg);
+  border: 2px solid var(--NumberOneBg);
+}
+.user-panel,
+.user-panel .info {
+  overflow: unset !important;
+}
+.P_Boxs {
+  display: flex;
+  align-items: center;
+}
+.Boxs {
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  width: 147px;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.06);
+  margin: 0 5px;
+}
+.IconSup {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.362);
+}
+.TextSup {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.362);
+  margin-top: 10px;
+}
+.ActiveTab {
+  color: var(--NumberOneBg) !important;
+}
+.PAllBoxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.SendInfo {
+  border: none;
+  color: white;
+  background-color: var(--NumberOneBg);
+  border-radius: 8px;
+  padding: 5px 20px 8px 20px;
+  margin-top: 20px;
+}
+.SendInfo:hover {
+  background-color: var(--NumberOneBgHover);
+}
+.WraperSup {
+  padding: 20px 100px;
+}
+.TextArea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 2px solid #eef0f3;
+  height: 100px;
+}
+.TextArea:focus {
+  outline: 2px solid var(--NumberOneBg);
+}
+.Show {
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 2px solid var(--NumberOneBg);
+  color: var(--NumberOneBg);
+  transition: all 0.3s;
+}
+Replyed {
+  padding: 4px 15px;
+  border-radius: 24px;
+  background-color: rgb(0 255 0 / 13%);
+  color: #009500;
+  font-size: 14px;
+}
+.WaitingStatus {
+  padding: 4px 15px;
+  border-radius: 24px;
+  background-color: rgba(0, 170, 255, 0.13);
+  color: #005495;
+  font-size: 14px;
+}
+.MyTeckets {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.Mt50 {
+  margin-top: 50px;
+}
+.content-wrapper {
+  min-height: calc(100vh - 70px);
+}
+
+.BodyTicket {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 30px;
+  font-family: var(--TitleFont);
+}
+.WhiteAreaTicket {
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 5px 5px 17px #00000014;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.WhiteAreaTicketWithHeight {
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 5px 5px 17px #00000014;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  scrollbar-face-color: #6488c9ff; /* Firefox 63 compatibility */
+  scrollbar-track-color: #fff; /* Firefox 63 compatibility */
+  scrollbar-color: #6488c9ff #fff;
+  scrollbar-width: thin;
+  height: 60%;
+}
+.WhiteAreaTicketWithHeight::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.WhiteAreaTicketWithHeight::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.WhiteAreaTicketWithHeight::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+/* width */
+.WhiteAreaTicketWithHeight::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.WhiteAreaTicketWithHeight::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.WhiteAreaTicketWithHeight::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.WhiteAreaTicketWithHeight::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.TitleTicket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TextTitleTicket {
+  font-size: 22px;
+  font-weight: 500;
+  flex: 1;
+}
+.NumTicket {
+  font-size: 16px;
+  opacity: 0.85;
+}
+.DateTicket {
+  font-size: 14px;
+  opacity: 0.85;
+  width: fit-content;
+  padding: 4px 10px;
+  background-color: #0000000f;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.P_DateNum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.AvatarAndText {
+  display: flex;
+  width: 65%;
+  background: #000000d9;
+  padding: 20px;
+  color: white;
+  border-radius: 18px 0 18px 18px;
+  margin-bottom: 20px;
+}
+.AvatarAndTextWhite {
+  display: flex;
+  width: 65%;
+  background: #e7e7e7;
+  float: left;
+  padding: 20px;
+  color: black;
+  border-radius: 0px 18px 18px 18px;
+  margin-bottom: 20px;
+}
+.ImgTicket {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.P_NameAndDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.P_P_NameAndDate {
+  flex: 1;
+  margin-top: 11px;
+  margin-right: 15px;
+}
+.NameAvatar {
+  font-size: 20px;
+}
+.TextMessage {
+  font-size: 17px;
+  margin-top: 12px;
+}
+.TextAreaTicket {
+  width: 100%;
+  border-radius: 8px;
+  padding: 15x;
+  padding: 15px;
+  min-height: 170px;
+  resize: vertical;
+  font-size: 17px;
+}
+.TextAreaTicket:focus-visible {
+  border: 2px solid var(--NumberOneBg);
+  outline: none;
+}
+.SendTicket {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  background-color: var(--NumberOneBg);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.SendTicket:hover {
+  background-color: var(--NumberOneBgHover);
+}
+.P_TextAreaTicket {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.P_chooseFile {
+  width: fit-content;
+}
+.P_Req {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.L_Req {
+  width: 300px;
+  background-color: #0000000f;
+  padding: 5px 20px 20px 20px;
+  border-radius: 12px;
+}
+.R_Req {
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ButtonOfReq {
+  padding: 6px 12px;
+  border-radius: 4px;
+  width: 250px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+}
+.BtnNewVer {
+  background-color: var(--NumberOneBg);
+  transition: all 0.3s;
+  color: white;
+}
+.BtnNewVer:hover {
+  background-color: var(--NumberOneBgHover);
+  color: white;
+}
+.OrangeRed {
+  background-color: #ff4500;
+}
+.Mt_20 {
+  margin-top: 20px;
+}
+
+.Confirm100 {
+  background-color: var(--SpecialColor);
+  transition: all 0.3s;
+}
+.Confirm100:hover {
+  background-color: var(--SpecialColorHover);
+}
+
+.BtnsOfReq {
+  padding: 5px 16px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  background-color: var(--NumberOneBg);
+  color: white;
+  cursor: pointer;
+}
+.Modal_Projects {
+  border-radius: 12px;
+  padding: 10px 25px;
+}
+.Req_Pay {
+  background-color: #ff9912;
+}
+.Req_Cancel {
+  background-color: #ff4500;
+}
+.NotShow:hover {
+  background-color: unset !important;
+}
+.Narezayati {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black !important;
+}
+.Narezayati:hover {
+  color: black !important;
+}
+.TypeOfGuy {
+  color: var(--NumberOneBg);
+  font-size: 17px;
+  margin-top: 15px;
+}
+.GuyAndDate {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.GuyPic {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.NameOfThatGuy {
+  font-size: 14px;
+}
+.DateOfThatGuy {
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.85;
+}
+.PriceOf {
+  font-size: 15px;
+  margin: 6px 0;
+}
+.ProjectStatus {
+  font-size: 15px;
+  margin: 5px 0;
+  color: var(--NumberOneBg);
+}
+.P_ContainerOfSec {
+  display: flex;
+}
+.R_ContainerOfSec {
+  flex: 1;
+}
+.L_ContainerOfSec {
+  width: 400px;
+}
+.SelectAutor {
+  position: relative;
+  margin: 12px;
+}
+.SelectAutor label {
+  display: block;
+}
+.P50 {
+  padding: 50px !important;
+}
+#top-title {
+  margin-top: 30px;
+  position: relative;
+}
+.P_ItemPost {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+}
+.ItemDel {
+  display: inline-block;
+}
+.HFitContent {
+  height: fit-content;
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid #00000026;
+}
+.ImgProd {
+  width: 75px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.TextProd {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.InputOfPrice {
+  border: none;
+  border-radius: 6px;
+  padding: 0 10px;
+  font-size: 16px;
+  height: 35px;
+  width: 100px;
+}
+.InputOfPrice:focus {
+  outline: 2px solid var(--NumberOneBg);
+}
+.FastChange {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--SpecialColor);
+  transition: all 0.3s;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+.FastChange:hover {
+  background-color: var(--SpecialColorHover);
+}
+
+.NormalChange {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--NumberOneBg);
+  transition: all 0.3s;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.NormalChange:hover {
+  background-color: var(--NumberOneBgHover);
+}
+
+.DeleteProd {
+  border: none;
+  border-radius: 8px;
+  background-color: red;
+  transition: all 0.3s;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.DeleteProd:hover {
+  background-color: rgb(187, 0, 0);
+}
+
+.P_Table {
+  margin-top: 30px;
+}
+.P_Tab_Prod {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+}
+.Prod_Filter {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.696);
+}
+.P30 {
+  padding: 30px;
+}
+.Active_Prod {
+  color: var(--NumberOneBg);
+}
+.W40 {
+  width: 40px;
+}
+.Status {
+  width: 125px;
+}
+.W64 {
+  width: 64px;
+}
+.FileManager {
+  background: var(--NumberOneBg);
+  padding: 7px;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  width: 150px;
+  text-align: center;
+  color: white;
+  float: left;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.container input {
+  margin: 8px;
+}
+.SabtBtn {
+  width: 84px;
+  padding: 5px 10px;
+  font-size: 16px;
+  float: left;
+  margin: 10px 0;
+  background: var(--NumberOneBg);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.SubjectOfAr {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+}
+.ContectOfar {
+  overflow: auto;
+  height: 150px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 14px;
+}
+.BtnOfRead {
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 14px;
+  float: left;
+  background: var(--NumberOneBg);
+  color: white;
+}
+.FaEdit {
+  font-size: 22px;
+  color: var(--NumberOneBg);
+}
+.TrashBtn{
+  font-size: 22px;
+  color: red;
+}
+.listarticles {
+     /* border: 1px solid #003b98; */
+     padding: 5px;
+     margin: 10px 0;
+     border-radius: 5px;
+     display: inline-block;
+     color: black;
+     width: 100%;
+     background: #34445114;
+     /* color: #fff; */
+     padding: 10px 10px 2px 10px;
+}
+.listarticles:hover {
+  transition: all 0.5s;
+  box-shadow: 0 0 15px #00000066;
+}
+.AddProd{
+  padding: 8px 12px;
+  margin: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: var(--NumberOneBg);
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.AddProd:hover{
+  background-color: var(--NumberOneBgHover);
+}
+.Br20{
+  border-radius: 12px;
+}
+.TypeOfPayement{
+  padding: 10px;
+  width: 160px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.195);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  color: rgb(0 0 0 / 59%);
+  cursor: pointer;
+}
+.IconPay{
+  font-size: 35px;
+}
+.PayText{
+  margin-top: 10px;
+}
+.P_TypeOfPayement{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.Br20{
+  border-radius: 20px !important;
+}
+.Active_Pay{
+  border: 2px solid var(--NumberOneBg);
+  color: var(--NumberOneBg);
+}
+.PayBtns{
+  border: none;
+  padding: 6px 14px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color: var(--NumberOneBg);
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+}
+.PayBtns:hover{
+  background-color: var(--NumberOneBgHover);
+}
+
+@media screen and (max-width: 960px) {
+  .SpaceContent {
+    padding: 0;
+  }
+  .WraperSup {
+    padding: 20px;
+  }
+  .PAllBoxs {
+    overflow-x: auto;
+    width: 100%;
+  }
+  .BodyTicket {
+    padding: 20px;
+  }
+  .TitleTicket {
+    flex-direction: column;
+    align-items: center;
+  }
+  .P_DateNum {
+    margin-right: 0;
+  }
+  .DateTicket {
+    margin: 12px auto;
+  }
+  .AvatarAndText,
+  .AvatarAndTextWhite {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .P_NameAndDate {
+    flex-direction: column;
+    align-items: center;
+  }
+  .P_P_NameAndDate {
+    margin: 0;
+  }
+  .TextMessage {
+    margin-top: 0;
+    text-align: center;
+  }
+  .WhiteAreaTicket {
+    padding: 14px;
+  }
+}
+/* End Sepehr Code */

@@ -1,0 +1,278 @@
+@font-face {
+    font-family: zarei;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../../font/IRANSansWeb(FaNum)_Bold.woff") format("woff"); }
+@font-face {
+    font-family: zarei;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../../font/IRANSansWeb(FaNum)_Medium.woff") format("woff"); }
+@font-face {
+    font-family: zarei;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../font/IRANSansWeb(FaNum)_Light.woff") format("woff"); }
+@font-face {
+    font-family: zarei;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../../font/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"); }
+@font-face {
+    font-family: zarei;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../font/IRANSansWeb(FaNum).woff") format("woff");
+}
+
+* {
+  font-family: zarei;
+    box-sizing: border-box;
+}
+
+
+    #myInput {
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 400px;
+        overflow-y: scroll;
+    }
+
+    #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block
+    }
+
+    #myUL li a:hover:not(.header) {
+        background-color: #eee;
+    }
+
+  #toselect-item
+  {
+      text-align: right;
+      padding: 10px;
+  }
+  .selected-item
+  {
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-block;
+      width: 100px;
+      border: 1px solid #D2D2D2;
+      text-align: center;
+      padding: 3px;
+      border-radius: 3px;
+  }
+  .selected-item:hover
+  {
+      background: #949494;
+      color: #eeeeee;
+  }
+ #example_code_download
+ {
+     text-align: center;
+     border: 1px solid #5b5b5b;
+     padding: 5px;
+     border-radius: 3px;
+     background: #d4d4d4;
+     color: #202020;
+     font-size: 15px;
+     font-weight: bold;
+     text-decoration: none;
+ }
+ #example_code_download a
+ {
+     color: #202020;
+     text-decoration: none;
+ }
+ .title-dcp
+ {
+     text-align: justify;
+     width: 750px;
+     direction : ltr;
+ }
+
+ .CodeMirror-scroll {
+     font-size: 18px;
+     overflow-x: hidden !important;
+     padding-left: 0;
+     width: 100%;
+ }
+ .CodeMirror-gutter-elt {
+     margin: 0px;
+     width: 30px !important;
+     text-align: center;
+     padding: 0;
+     left: 9px !important;
+ }
+.CodeMirror-scroll {
+    font-size: 18px;
+    overflow-x: hidden !important;
+    padding-left: 35px;
+    width: 96.5%;
+}
+.AcademyBg{
+    width: 100vw;
+    padding: 40px 0;
+    background-color: #282A35;
+    background-image: url(../../assets/images/BGCodeAcademy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px #0000004d;
+}
+.LearnProg{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+.TheBestWeb{
+    text-align: center;
+    font-size: 20px;
+    color: var(--NumberOneBg);
+    margin-top: 15px;
+}
+.Search{
+    width: 300px;
+    padding: 10px 20px;
+    height: 46px;
+    border-radius: 20px;
+    border: 2px solid var(--NumberOneBg);
+    font-size: 18px;
+}
+.Search:focus{
+    outline: none;
+}
+.Search::placeholder{
+    opacity: 1;
+}
+.SeachButton{
+    width: 60px;
+    height: 100%;
+    background-color: var(--NumberOneBg);
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    outline: none;
+}
+.SeachButton:focus{
+    outline: none;
+}
+.IconSerach{
+    color: white;
+    font-size: 16px;
+}
+.MainWrapper{
+    padding:  0 100px;
+}
+.LeftWrapper{
+    border-radius: 6px;
+    padding-left: 12px !important;
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+}
+.ItemsOfCode{
+    background-color: var(--NumberOneBg) !important;
+    color: white !important;
+}
+.ItemOnHover:hover{
+    background-color: var(--NumberOneBgHover) !important;
+    color: white !important;
+}
+.BtnCopy{
+    background-color: var(--NumberOneBg) ;
+    color: white !important;
+    outline: none;
+    padding: 5px ;
+    border: none;
+    width: 85px;
+    transition: all 0.3s;
+}
+.SabtBtn{
+    background-color: var(--NumberOneBg);
+    color: white;
+    padding: 4px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s;
+
+}
+.BtnCopy:hover , .SabtBtn:hover{
+    background-color: var(--NumberOneBgHover);
+}
+#Ccode2{
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.179);
+    direction: ltr;
+}
+#Ccode2:focus{
+    outline: 1px solid var(--NumberOneBg);
+    border: 1px solid var(--NumberOneBg);
+
+}
+.InputProg{
+    width: 100%;
+    background: var(--mainBlack);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+.InputSerachProg{
+    border: 2px solid #0000004f !important;
+    border-radius: 8px;
+    height: 40px;
+    color: var(--mainBlack);
+    padding: 10px !important;
+    direction: ltr;
+    transition: all 0.3s;
+}
+.InputSerachProg:focus{
+    border: 2px solid var(--mainBlack);
+}
+.active{
+    background-color: var(--mainBlack) !important;
+    color: white ;
+    border-radius: 4px;
+    padding: 6px ;
+}
+.active:hover{
+    color: white !important;
+}
+@media screen and (max-width:960px){
+    .MainWrapper{
+        padding:  0 10px;
+    }
+    .LeftWrapper{
+        margin-top: 330px !important;
+    }
+}

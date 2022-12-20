@@ -1,0 +1,4 @@
+Indicator
+//Indicator body
+RSI Structure
+This logic can detect cross between 2 moving average* 

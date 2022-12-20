@@ -1,0 +1,12 @@
+@import url("plugins/font-awesome/css/font-awesome.min.css");
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+@import url("dist/css/adminlte.min.css");
+@import url("plugins/iCheck/flat/blue.css");
+@import url("plugins/morris/morris.css");
+@import url("plugins/jvectormap/jquery-jvectormap-1.2.2.css");
+@import url("plugins/datepicker/datepicker3.css");
+@import url("plugins/daterangepicker/daterangepicker-bs3.css");
+@import url("plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css");
+@import url("dist/css/bootstrap-rtl.min.css");
+@import url("dist/css/custom-style.css");
+@import url("../css/style_alert.css");

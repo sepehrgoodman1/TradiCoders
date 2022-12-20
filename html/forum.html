@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum</title>
+
+    <!-- Css Codes -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/projectPage.css" />
+
+    <!-- Font Awesome Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="BodyForum">
+    <div>
+      <div class="WrapperForums">
+        <div class="TitleFont ForumText">انجمن</div>
+        <!-- Filters -->
+        <div class="Filters">
+          <div>
+            <div onclick="onClick('btnradio1')" class="ItemFilter">تازه ها</div>
+            <div onclick="onClick('btnradio2')" class="ItemFilter">
+              پربحث ترین ها
+            </div>
+            <div onclick="onClick('btnradio3')" class="ItemFilter">
+              بدون جواب ها
+            </div>
+            <div class="SabtOrder">
+              <button >افزودن سوال</button>
+          </div>
+          </div>
+          <div class="P_InputSearch">
+            <input type="text" class="InputSearch" placeholder="جستجو..." />
+            <i class="SearchIcon fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="LineFilter SecondaryBG"></div>
+
+        <!-- Start Forum -->
+        <div class="ForumArea">
+          <div class="WrapperForumList Flex1">
+            <!-- ForumItem -->
+            <div class="ForumItem">
+              <div>
+                <div class="P_ImageAndQues">
+                  <div>
+                    <img
+                      src="assets/images/person.webp"
+                      class="LogoPrograming"
+                      alt="Programing Language"
+                    />
+                  </div>
+                  <div class="P_TitleForum">
+                    <div class="TitleForum TitleFont">
+                      ارور مربوط به ienumarstor در سی شارپ
+                    </div>
+                    <div class="TimePostForm">پست شده در 10 ساعت پیش</div>
+                    <div class="TopMessageForm">
+                      <i class="fa-solid fa-reply"></i>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                      شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                      درصد گذشته است.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="NumComments">
+                4
+                <i class="fa-solid fa-comments"></i>
+              </div>
+            </div>
+
+            <!-- ForumItem -->
+            <div class="ForumItem">
+              <div>
+                <div class="P_ImageAndQues">
+                  <div>
+                    <img
+                      src="assets/images/person.webp"
+                      class="LogoPrograming"
+                      alt="Programing Language"
+                    />
+                  </div>
+                  <div class="P_TitleForum">
+                    <div class="TitleForum TitleFont">
+                      ارور مربوط به ienumarstor در سی شارپ
+                    </div>
+                    <div class="TimePostForm">پست شده در 10 ساعت پیش</div>
+                    <div class="TopMessageForm">
+                      <i class="fa-solid fa-reply"></i>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                      شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                      درصد گذشته است.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="NumComments">
+                4
+                <i class="fa-solid fa-comments"></i>
+              </div>
+            </div>
+
+            <!-- ForumItem -->
+            <div class="ForumItem">
+              <div>
+                <div class="P_ImageAndQues">
+                  <div>
+                    <img
+                      src="assets/images/person.webp"
+                      class="LogoPrograming"
+                      alt="Programing Language"
+                    />
+                  </div>
+                  <div class="P_TitleForum">
+                    <div class="TitleForum TitleFont">
+                      ارور مربوط به ienumarstor در سی شارپ
+                    </div>
+                    <div class="TimePostForm">پست شده در 10 ساعت پیش</div>
+                    <div class="TopMessageForm">
+                      <i class="fa-solid fa-reply"></i>
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                      شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                      درصد گذشته است.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="NumComments">
+                4
+                <i class="fa-solid fa-comments"></i>
+              </div>
+            </div>
+          </div>
+          <div class="LeftForum">
+            <div class="TitleFont TitleDiscution">پربحث ترین ها</div>
+            <!-- Item Discution -->
+            <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-regular fa-comment-dots"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-regular fa-comment-dots"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-regular fa-comment-dots"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-regular fa-comment-dots"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-regular fa-comment-dots"></i>
+
+                137
+              </div>
+            </div>
+            <div class="TitleFont TitleDiscution2 ">پربازدید ترین ها</div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-solid fa-eye"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-solid fa-eye"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-solid fa-eye"></i>
+
+                137
+              </div>
+            </div>
+             <!-- Item Discution -->
+             <div class="ItemDiscution">
+              <div>
+                <img
+                  src="assets/images/person.webp"
+                  class="LogoProgramingNew"
+                  alt="Programing Language"
+                />
+              </div>
+              <div class="NameOfDiscusser">سپهر خادمی</div>
+              <div class="NumDiscus">
+                <i class="fa-solid fa-eye"></i>
+
+                137
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        <!-- End Forum -->
+      </div>
+    </div>
+
+    <script src="/js/TabChanger.js"></script>
+  </body>
+</html>

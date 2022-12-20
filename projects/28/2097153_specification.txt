@@ -1,0 +1,3 @@
+EA structure
+This function can calculate lot size according to loss pip and risk percent. so when stop loss will hit, you will lost x% of balance
+RSI Logic can do trade if RSI cross specific level in rsi indicator

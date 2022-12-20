@@ -1,0 +1,16 @@
+This logic can detect cross between 2 moving average* 
+This logic can detect cross of Stochastic and overbought or oversold level
+-
+ATR Logic can do trade if ATR be above or below specific level
+-
+MACD Logic can do trade if MACD Cross Specific Level in macd indicator
+RSI Logic can do trade if RSI cross specific level in rsi indicator
+This function can detect cross between 2 ichimuko lines
+-
+Hammer Logic
+-
+-
+-
+-
+CCI Cross Level
+-

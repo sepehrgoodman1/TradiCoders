@@ -1,0 +1,4 @@
+EA structure
+5
+
+This logic can detect cross between 2 moving average* 

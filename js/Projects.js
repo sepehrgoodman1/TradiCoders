@@ -15,4 +15,17 @@ AllProjects.addEventListener('click', event=>{
     currenText.classList.toggle("ReadMoreText_Show");
 
     Current.textContent = Current.textContent.includes("بیشتر")? "بستن": "بیشتر...";
-})
+});
+
+setInterval(() => {
+    if(document.getElementById('ProjList')){
+        let ProjListHeight = document.getElementById('ProjList').clientHeight;
+        document.getElementById('ScrollerProjects').style.height = ProjListHeight - 45;
+    }
+   
+}, 1500);
+
+
+
+
+

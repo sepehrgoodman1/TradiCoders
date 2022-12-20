@@ -1,0 +1,591 @@
+.style-scroll{
+    height: 100%;
+    overflow: auto;
+    scrollbar-color: #f1f1f1 #888;
+    scrollbar-width: thin;
+}
+/* width */
+.style-scroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .style-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius:4px;
+  }
+  .CodeMirror-gutters{
+    display: none;
+}
+  /* Handle */
+  .style-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:4px;
+  }
+  
+  /* Handle on hover */
+  .style-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+.P_Main{
+    display: flex;
+    direction: ltr;
+    margin-top: 51px;
+    height: calc(100vh - 54px);
+}
+.LeftSide{
+    overflow-y: auto;
+    background-color: #222336;
+    direction: ltr;
+    border-right: 2px solid #595c76;
+    display: flex;
+}
+.LeftContent{
+    width: 50px;
+    height: 100%;
+    background-color: #2a2c3f ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    flex-direction: column;
+    overflow-x: hidden;
+    border-right: 1px solid #ffffff0f;
+}
+.RightSideOfCode{
+    flex: 1;
+    direction: ltr;
+    padding-bottom: 100px;
+    background-color: #282A36;
+    transition: all 0.5s;
+    width: calc(100vw - 296px);
+}
+.MinWidthRight{
+    width: calc(100vw - 296px);
+}
+.FullWidthRight{
+    width: calc(100vw - 50px);
+}
+.TradiLogo{
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.IconLefts{
+    color: #a2a3bd;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.ActiveIcon{
+    color: white;
+}
+.IconLefts:hover , .IconRightSide:hover{
+    box-shadow: 0px 0px 14px -7px;
+}
+.RightContent{
+    padding: 0px 0px 10px 0;
+    color: #a2a3bd;
+    width: 244px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.RightContent_Close{
+    width: 0;
+    padding: 0;
+}
+.CarretSlide{
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+    color: #a2a3bd;
+    font-size: 30px;
+    cursor: pointer;
+}
+.CarretSlideRight{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    color: #2a2c3f;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.P_IconWork{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 12px;
+    padding-bottom: 10px;
+    direction: ltr;
+    border-bottom: 1px solid #36384b;
+}
+.P_IconWorkLight{
+    border-bottom: 1px solid #dedede;
+}
+.IconRightSide{
+    cursor: pointer;
+    color: #a2a3bd;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.15s ;
+}
+.IconRightSide:hover{
+    transform: scale(1.2);
+    color: white;
+}
+
+#bottom_panel {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 4px;
+    height: 196px;
+    background-color: #222336;
+    direction: rtl;
+    z-index: 1000;
+    min-height: 60px;
+    max-height: 95vh;
+}
+
+#bottom_panel::after {
+    content: '';
+    background-color: #595c76;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 7px;
+    cursor: ew-resize;
+}
+
+
+
+.ConsoleOutput{
+    color: #a2a3bd;
+    direction: ltr;
+    padding: 15px;
+    font-size: 14px;
+    overflow-y: auto;
+    height: calc(100% - 52px);
+    overflow-y: auto;
+    scrollbar-color: #41455B #222336;
+    scrollbar-width: thin;
+}
+
+.ConsoleOutput::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .ConsoleOutput::-webkit-scrollbar-track {
+    background: #222336;
+  }
+  
+  .ConsoleOutput::-webkit-scrollbar-thumb {
+    background: #666873;
+  }
+  
+  .ConsoleOutput::-webkit-scrollbar-thumb:hover {
+    background: #979797;
+  }
+
+
+.NavConsole{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: #2a2c3f ;
+    direction: ltr;
+    color: #a2a3bd;
+}
+.IconConsole{
+    padding: 0px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.IconConsole:hover{
+    color: white;
+}
+.InputConsole{
+    border-radius: 8px;
+    border: 1px solid #3f4455 ;
+    background-color: #35384c;
+    color: #a2a3bd;
+    padding: 5px 10px;
+}
+.InputConsole:focus{
+    outline: none;
+    direction: ltr;
+    color: #a2a3bd;
+}
+.Files{
+    font-size: 14px;
+    direction: ltr;
+    cursor: pointer;
+    padding: 3px 10px;
+    transition: all 0.1s;
+}
+.Files:hover{
+    color: white;
+}
+.FileIcon{
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+}
+
+#code{
+    height: 100%;
+    width: 100%;
+    direction: ltr !important;
+}
+.CodeMirror {
+    height: 100% !important;
+    padding-left: 8px;
+    padding-left: 6px;
+    padding-right: 50px;
+    /* width: fit-content !important; */
+}
+.CodeMirror-line {
+    direction: ltr !important;
+}
+.CodeMirror-sizer{
+    width: fit-content;
+}
+.CodeMirror-gutter-wrapper{
+    left: 0 !important;
+}
+.CodeMirror-line {
+    padding-left: 50px !important;
+}
+.CodeMirror-scroll{
+    scrollbar-color: #70727c #2a2a3a ;
+    scrollbar-width: thin;
+    overflow: auto !important;
+    padding-bottom: 0 !important;
+    direction: ltr;
+}
+.CodeMirror-vscrollbar {
+    right: 0;
+    top: 0;
+    overflow-x: unset !important; 
+     overflow-y: hidden !important;
+}
+
+.CodeMirror-scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  .CodeMirror-scroll::-webkit-scrollbar-track {
+    background: #2a2a3a;
+    border-radius: 3px;
+  }
+  
+  .CodeMirror-scroll::-webkit-scrollbar-thumb {
+    background: #70727c;
+    border-radius: 3px;
+  }
+  
+  .CodeMirror-scroll::-webkit-scrollbar-thumb:hover {
+    background: #9699a8;
+  }
+
+
+
+.CodeMirror_vscrollbarLight::-webkit-scrollbar  {
+    width: 10px;
+}
+.CodeMirror_vscrollbarLight::-webkit-scrollbar-track {
+    background: #dfdfdf;
+    border-radius: 8px;
+  }
+  
+  .CodeMirror_vscrollbarLight::-webkit-scrollbar-thumb {
+    background: #898989;
+    border-radius: 8px;
+  }
+  
+  .CodeMirror_vscrollbarLight::-webkit-scrollbar-thumb:hover {
+    background: #696969;
+  }
+
+
+
+
+  
+  .CodeMirror-hscrollbar {
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+.P_NavItems{
+    font-size: 14px;
+    background-color: #282A36;
+    color: #a2a3bd;
+    direction: ltr;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-color: #222336 #5d6178;
+    scrollbar-width: thin;
+    border-bottom: 1px solid #3f4455;
+}
+
+
+.P_NavItems::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .P_NavItems::-webkit-scrollbar-track {
+    background: #222336;
+    border-radius: 8px;
+  }
+  
+  .P_NavItems::-webkit-scrollbar-thumb {
+    background: #5d6178;
+    border-radius: 8px;
+  }
+  
+  .P_NavItems::-webkit-scrollbar-thumb:hover {
+    background: #41455B;
+  }
+
+.NavItem{
+    padding: 10px 16px;
+    border-left: 1px solid #3f4455;
+    border-right: 1px solid #3f4455;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: -4px;
+}
+.NavItemBorder{
+    border-left: 1px solid #EEF0F3;
+    border-right: 1px solid #EEF0F3;
+}
+.CloseNavIcon{
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.1s;
+}
+.NavItem:hover .CloseNavIcon{
+    opacity: 1;
+}
+.IconOfProg{
+    margin-right: 2px;
+    position: relative;
+    top: 1px;
+}
+.ActiveNav{
+    background-color: #313346;
+}
+.ActiveNavLight{
+    background-color: #EEF0F3;
+    
+}
+.P_TabCode{
+    display: flex;
+    direction: ltr;
+    height: 100%;
+}
+.TabCode{
+    height: 100%;
+    width: 65%;
+    overflow-x: auto;
+}
+.TextAreaApp{
+    background-color: rgb(40, 42, 54);
+    border: none;
+    direction: ltr;
+    color: #a2a3bd;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 0;
+    border-top: 1px solid #3f4455;
+    overflow: auto;
+    scrollbar-color: #41455B #222336;
+    scrollbar-width: thin;
+
+}
+.TextAreaApp:focus-visible{
+    outline: none;
+}
+.P_TextAreaApp{
+    height: 50%;
+}
+.P_AllTextArea{
+    flex: 1;
+    border-left: 1px solid #3f4455;
+}
+
+.TextAreaApp::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+  }
+  
+  .TextAreaApp::-webkit-scrollbar-track {
+    background: #222336;
+  }
+  
+  .TextAreaApp::-webkit-scrollbar-thumb {
+    background: #41455B;
+  }
+  
+  .TextAreaApp::-webkit-scrollbar-thumb:hover {
+    background: #484b60;
+  }
+
+
+/* The container */
+.P_CheckMark {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    direction: rtl;
+  }
+  
+  /* Hide the browser's default radio button */
+  .P_CheckMark input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .P_CheckMark:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .P_CheckMark input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .P_CheckMark input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .P_CheckMark .checkmark:after {
+       top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+.TextTheme{
+    position: relative;
+    bottom: 4px;
+}
+.SecSetting{
+    padding-top: 5px;
+    border-top: 1px solid #3f4455;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.LightLeftContent{
+    background-color: #EEF0F3;
+    border-right:1px solid #dee2e6 ;
+}
+.IconLeftsLight{
+    color: #808080;
+}
+.LeftSideLight{
+    background-color: white;
+}
+.TextCenterLight {
+    color: var(--NumberOneBg);
+}
+.FilesLight{
+    color: black;
+    opacity: 0.8;
+}
+.FilesLight:hover{
+    color: black;
+    opacity: 1;
+}
+.IconRightSideLight{
+    color: var(--NumberOneBg);
+}
+.IconRightSideLight:hover{
+    color: var(--NumberOneBgHover);
+}
+.black{
+    color: black;
+}
+.RightContentLight{
+    border-right:1px solid #dee2e6 ;
+}
+.SecSettingLight{
+    border-top:1px solid #dee2e6 ;
+    color: var(--NumberOneBg);
+}
+.TextThemeLight{
+    color: #495057;
+}
+.P_NavItemsLight{
+    background-color: white;
+}
+.AlmostBlack{
+    color: #495057;
+}
+.AlmostBlack:hover{
+    color: #495057;
+}
+.NavOfConsole{
+    background-image: linear-gradient(white,#e9ecef 60%,#e3e7eb);
+    background-repeat: no-repeat;
+}
+.TitleTabs{
+    background: rgb(238, 240, 243);
+    padding: 10px;
+}
+.TitleTabsLight{
+    background-color: transparent;
+}
+.CodeMirror-sizer{
+    min-width: 0 !important;
+    min-height: 0 !important;
+}

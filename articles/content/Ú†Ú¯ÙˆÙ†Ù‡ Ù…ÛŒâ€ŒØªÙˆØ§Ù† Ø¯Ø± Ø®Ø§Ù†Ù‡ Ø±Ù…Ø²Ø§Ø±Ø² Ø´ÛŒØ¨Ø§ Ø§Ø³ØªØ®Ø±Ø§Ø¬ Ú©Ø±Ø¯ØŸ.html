@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Articles</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: bold;
+            src: url('../../font/IRANSansWeb(FaNum)_Bold.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: 500;
+            src: url('../../font/IRANSansWeb(FaNum)_Medium.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: 300;
+            src: url('../../font/IRANSansWeb(FaNum)_Light.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: 200;
+            src: url('../../font/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'); }
+        @font-face {
+            font-family: zarei;
+            font-style: normal;
+            font-weight: normal;
+            src: url('../../font/IRANSansWeb(FaNum).woff') format('woff');
+        }
+
+        *
+        {
+            box-sizing: border-box;
+            font-family: zarei;
+        }
+        body
+        {
+            direction: rtl;
+            overflow-x: hidden;
+        }
+        a:hover
+        {
+            text-decoration: none !important;
+        }
+        .jumbotron {
+            margin-top: 1%;
+            background-color: #fff;
+            color: #303030;
+        }
+
+        #myInput {
+            width: 40%;
+            font-size: 16px;
+            padding: 7px 25px 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+
+        #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myUL li a {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin: 1px;
+        }
+
+        #myInput2 {
+            width: 40%;
+            font-size: 16px;
+            padding: 7px 25px 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+        #myUL2 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myUL2 li a {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin: 1px;
+        }
+
+        #myInput3 {
+            width: 40%;
+            font-size: 16px;
+            padding: 7px 25px 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+        #myUL3 {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #myUL3 li a {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+<!--again form-->
+<form action='' method='post' id='againform' style='background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(26, 22, 21); height: 350px; display: none; z-index: 5; position: fixed; top: 100px; width: 500px; margin: auto; left: 490px;'>
+    <div style='width: 500px;position: relative;border-radius: 15px 15px 0 0;padding: 10px;text-align: center;color: white;padding-bottom: 1px;bottom: 10px;border-bottom: 0.1px solid #000;background: #047570;'>
+        <div class='imgcontainer'>
+            <span style='font-size: 30px;color: white;' onclick='closeForm('againform')' class='close' title='Close Modal'>×</span>
+        </div>
+        <h1 style='text-align: center;color: #fff;'>سفارش</h1>
+    </div>
+    <div style='margin-left: 20px;text-align: right;'>
+        <div style='font-size: 20px;padding: 5px 15px 10px 0;'>
+            توضیحات :
+        </div>
+        <textarea name='' id='' style='width: 100%;margin-right: 10px;' rows='5'></textarea>
+    </div>
+    <div style='position: relative;top: 20px;right: 25px;' class='row'>
+        <div style='padding: 0 !important;width: 40%;text-align: center;background: #047570;border-radius: 5px;margin: 10px;border: 1px solid #005552;display: inline-block;' class='col-4 button--active'>
+            <button type='submit' class='btn' style='color: white;background: none;'>ثبت سفارش</button>
+        </div>
+        <div style='color: #707476;border: 1.3px solid;padding: 0 !important;width: 40%;text-align: center;margin: 10px;border-radius: 5px;display: inline-block;' class='col-4'>
+            <button type='button' class='btn cancel' onclick='closeForm('againform')' style='color: #707476;background: none;'>بستن</button>
+        </div>
+    </div>
+</form>
+<!--again form-->
+
+<!--login form-->
+<form action='index.php' method='post' id='loginform' style='background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid #014946; height: 350px; display: none; z-index: 5; position: fixed; top: 100px; width: 500px; margin: auto; left: 490px;'>
+    <div style='background: #047570;width: 500px;position: relative;border-radius: 15px 15px 0 0;padding: 10px;text-align: center;color: white;padding-bottom: 1px;bottom: 21px;border-bottom: 0.1px solid #000;'>
+        <div class='imgcontainer'>
+            <span style='font-size: 30px;color: white;' onclick='closeForm('loginform')' class='close' title='Close Modal'>×</span>
+        </div>
+        <h1 style='text-align: center;'>ورود</h1>
+    </div>
+    <div style='margin-left: 20px;text-align: right;'>
+        <label for='email' style='font-size: 20px;margin: 7px;margin-right: 40px;'><b style=''>: ایمیل</b><div></div></label><br>
+
+        <input type='text' id='emaillogin' required='' style='background:white;padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 85%;text-align: right;margin-right: 40px;' name='emaillogin' placeholder='ایمیل خود را وارد کنید'><br>
+
+
+        <label for='psw' style='font-size: 20px;margin: 7px;margin-right: 42px;'><b>: رمز ورود</b></label><br>
+
+        <input type='password' name='pswlogin' id='pswlogin' required' style='background:white;padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 85%;text-align: right;margin-right: 40px;' placeholder='رمز خود را وارد کنید'>
+
+    </div>
+    <div style='position: relative;top: 20px;right: 25px;' class='row'>
+        <div style='padding: 0 !important;width: 40%;text-align: center;background: #047570;border-radius: 5px;margin: 10px;border: 1px solid #014946;display: inline-block;' class='col-4 button--active'>
+            <button type='submit' class='btn' style='color: white;background: none;'>ورود</button>
+        </div>
+        <div style='color: #707476;border: 1.3px solid;padding: 0 !important;width: 40%;text-align: center;margin: 10px;border-radius: 5px;display: inline-block;' class='col-4'>
+            <button type='button' class='btn cancel' onclick='closeForm('loginform')' style='color: #707476;background: none;'>بستن</button>
+        </div>
+    </div>
+</form>
+<!--login form-->
+
+<!--signup form-->
+<form action='' method='post' id='signupform' style='display: none; background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: 500px; z-index: 5; position: fixed; top: 100px; width: 500px; margin: auto; left: 490px; border-radius: 15px; border: 1px solid #047570'>
+    <div class='container' style='width: 100%;background: #fff;border-radius:15px;'>
+        <div style='height:70px;background: #047570;width: 106.3%;position: relative;border-radius: 15px 15px 0 0;padding: 10px;padding-bottom: 10px;text-align: center;color: white;padding-bottom: 1px;margin-bottom: 10px;left: 15px;'>
+            <div class='imgcontainer'>
+                <span style='font-size: 30px;color: #5c6163;' onclick='closeForm('signupform')' class='close' title='Close Modal'>×</span>
+            </div>
+            <h1 style='margin: 0;color: white'>ثبت نام</h1>
+
+        </div>
+        <div style='margin-left: 10px'>
+            <div class='w3-row'>
+                <div>
+                    <input type='text' id='fname' name='namesignup' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' placeholder='' نام خود را وارد کنید'>
+                </div>
+
+                <div style='margin-bottom: 10px;'>
+                    <input type='text' id='lname' name='lastnamesignup' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' placeholder='نام خانوادگی خود را وارد کنید'>
+                </div>
+            </div>
+
+            <input type='hidden' name='lastuserid' id='lastuserid' value=''>
+
+            <div style='margin-bottom: 10px;'>
+                <input type='text' name='emailsignup' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' required' placeholder='ایمیل خود را وارد کنید'>
+            </div>
+
+            <div class='w3-row' style='position: relative;bottom: 10px'>
+                <div class='w3-col m5 l5' style='margin-right: 10px'>
+                    <input type='password' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 97%;margin: 5px;text-align: right;' name='pswsignup' required='' placeholder='رمز خود را وارد کنید'>
+                </div>
+
+                <div class='w3-col m5 l5'>
+                    <input type='password' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' name='pswsecondsignup' required' placeholder='تکرار رمز ورود'>
+                </div>
+
+                <div class='w3-col m5 l5'>
+                    <input type='phone' style='padding: 10px;border: 1px solid #a1a1a1;border-radius: 5px;width: 95%;margin: 5px;text-align: right;' name='phonenumbersignup' required' placeholder='شماره موبایل'>
+                </div>
+            </div>
+            <div style='margin-left: 10px;text-align: right;'>
+                <label style='margin-right: 20px;'>
+                    <input type='checkbox' checked='checked' name='remember' style='float: right;margin: 5px;'>من را به یاد داشته باش</label>
+                <label style='margin-right: 20px;'>
+                    <input type='checkbox' checked='' name='newdev' style='float: right;margin: 5px;'>
+                    همکاری با تیم تریدیکدرز به عنوان توسعه دهندگان
+                </label>
+            </div>
+        </div>
+
+        <div class='clearfix w3-row' style='text-align: center;padding: 5px;position: relative;'>
+
+            <button type='submit' class='w3-col m5 l5 button--' style='color: white;border: 1px solid #047570;margin-left: 10px;padding: 5px;width: 35%;border-radius: 5px;background: #047570;'>ثبت نام</button>
+            <button type='button' class='w3-col m5 l5 button--active cancel' style='margin-right: 10px;padding: 5px;width: 30%;border-radius: 5px;border: 1px solid #047570;color: #707476;background: none;' onclick='closeForm('signupform')'>بستن</button></div>
+    </div>
+</form>
+<!--signup form-->
+
+<!--menu-->
+<div class='topnav' id='myTopnav' style='box-shadow: 0 3px 10px rgba(71,44,173,.2);padding: 10px;height: 60px;position: fixed;width: 100%;background: #fff;z-index: 10;top: 0;'>
+    <div class='row'>
+        <div class='col-12' style='text-align:right;'>
+            <?php
+            if ( < 0)
+            {
+                ?>
+            <button style='width: 110px;margin: 5px;margin-right: 20px;border: 1px solid;border-radius: 5px;padding: 5px;background: none;color: #344451;' onclick='login()'>ورود</button>
+            <button style='width: 110px;margin: 5px;margin-right: 0px;border: 1px solid #344451;border-radius: 5px;padding: 5px;background: #344451;color: #fff;' onclick='signup()'>ثبت نام</button>
+            <?php
+            }else
+            {
+                ?>
+            <span style='width: 110px;margin: 5px;margin-right: 20px;padding: 5px;background: none'></span>
+            <?php
+            }
+            ?>
+            <a href='../../index.php' style='margin: 5px;margin-right: 10px;border-radius: 5px;color: #444;background: none;border: none;' >خانه</a>
+            <a href='../../guide.php' style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >راهنما</a>
+            <a href='../../doneproject.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;'>برترین پروژه ها</button>
+            </a>
+            <a href='../../academy/index.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >آکادمی</button>
+            </a>
+            <a href='../../articles.php' style='margin: 5px;margin-right: 10px;color: #444;background: none;border: none;border-bottom:1px solid #344451;padding-bottom: 5px;'>کتابخانه</a>
+            <a href='../../developer.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >توسعه دهندگان</button>
+            </a>
+            <!--
+            <a href='optimization.php'>
+                <button style='margin: 5px;margin-right: 0px;border-radius: 5px;color: #444;background: none;border: none;' >پروژه بهینه سازی</button>
+            </a>
+            -->
+            <a href='profile/index.php' class='d-block' style='position: absolute;left: 40px;top: 8px;color:#344451;font-size: 13px;font-weight: bold;'>
+                <div style='display: inline-block;position: relative;bottom: 5px;'>
+                    <?php echo  ; ?>
+                    <hr style='margin:5px;'>
+                    <div>ناحیه کاربری</div>
+                </div>
+                <div style='margin-right: 10px;width: 40px;height: 40px;overflow: hidden;border: 1px solid ; border-radius: 50%;display: inline-block;'>
+                    <img src='../' alt='' style='width: 100%;height: 100%;'>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!--menu-->
+
+<!--Project List-->
+<div class='content' style='margin: 8% 5% 0 5%;'>
+    <div id='top-title' style='border: 1px solid #d2d2d2;padding: 20px 10px;border-radius: 10px;'>
+        <img src='../../asset/img/20_icon.jpg' alt='' style='width: 60px;height: 60px;border: 1px solid;border-radius: 50%;position: relative;right: 95%;display: inline-block;'>
+        <div id='title' style='margin: 10px;font-size: 26px;font-weight: bold;display: inline-block;'>
+            چگونه می‌توان در خانه رمزارز شیبا استخراج کرد؟
+        </div>
+
+        <div style='width: 90%;margin: auto;margin-top: 20px;text-align: left;'>
+            ,finance,
+
+            <button style='padding: 7px;background: none;border: 1px solid #344451;border-radius: 5px;color: #344451;margin:5px;margin-right: 30px;'>کد در آکادمی</button>
+            <button style='padding: 7px;background: none;border: 1px solid #344451;border-radius: 5px;color: #344451;margin:5px;'>سفارش ربات</button>
+        </div>
+    </div>
+
+    <div style='margin: 10px 0;border-radius: 10px;padding: 10px;'><p dir="rtl" style="text-align:justify"><img alt="" src="https://tradicoders.ir/articles/assets/Articles/06-1.jpg" style="border-style:solid; border-width:2px; height:411px; margin-left:170px; margin-right:170px; width:731px" /></p>
+
+<p dir="rtl" style="text-align:justify"><span style="font-size:20px">برخی مواقع استخراج رمزارز برای کاربران سطح متوسط کاری بسیار پیچیده به نظر می&zwnj;رسد، بنابراین در این مطلب قصد داریم راهنمای سریعی برای استخراج رمزارز &laquo;شیبا&raquo; در اختیار شما قرار دهیم. هر کسی می&zwnj;تواند در ۵ دقیقه تنها با استفاده از کامپیوتر شخصی خود ارز &laquo;شیبا اینو&raquo; را استخراج کند. برای این کار نیاز به مهارت خاصی نیست و به کمک مراحل ذکر شده در زیر دانش شما از رمزارزها بیشتر می&zwnj;شود و می&zwnj;توانید یکی از آن&zwnj;ها را استخراج کنید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px"><span style="color:#16a085"><strong>مرحله&zwnj;ی اول: یک کیف پول دیجیتال برای خود تهیه کنید</strong></span><br />
+پیشنهاد ما این است که &laquo;Metamask&raquo; را به&zwnj;عنوان یک افزونه روی کروم نصب کنید. پس از این مرحله اطمینان حاصل کنید که به شبکه&zwnj;ی اسمارت چین بایننس متصل شده&zwnj;اید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">برای داشتن کیف پول می&zwnj;توانید از &laquo;<a href="https://www.exodus.com/">Exodus</a>&raquo; یا &laquo;<a href="https://atomicwallet.io/">Atomic Wallet</a>&raquo; نیز استفاده کنید تا بتوانید ارزهای دیگری را نیز بدن دردسر در دسترس داشته باشید.&nbsp;<br />
+در ادامه، در متامسک اسمارت چین بایننس را انتخاب کنید و آدرس خود را کپی کنید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px"><span style="color:#16a085"><strong>مرحله&zwnj;ی دوم: XMRIg را از Github دانلود کنید</strong></span><br />
+می&zwnj;توانید به سایت xmrig بروید و آخرین نسخه&zwnj;ی مورد نیاز را دانلود کنید و یا می&zwnj;توانید به سایت رسمی github به آدرس زیر بروید و نسخه&zwnj;ی آخر را دانلود کنید:<br />
+<a href="https://github.com/xmrig/xmrig/releases"><strong>https://github.com/xmrig/xmrig/releases</strong></a></span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">زمانی که آخرین نسخه را دانلود کردید، باید نام فایل را ویرایش کنید و آن&zwnj;را به &laquo;pool_mine_example.cmd&raquo; تغییر دهید و درون فایل نیز لازم است دو خط را ویرایش کنید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">احتمالاً چیزی که در فایل دانلود شده مشاهده می&zwnj;کنید، به شکل زیر است:<br />
+<strong>cd %~dp0</strong><br />
+<strong>xmrig.exe -o rx.unmineable.com:3333 -u</strong><br />
+<strong>SHIB:0xe1b2456a2Ad227b93D7a7421f1E9Cc57908cC37c.wini3#</strong><em><strong>g4xp-im3g</strong></em><strong> -p x</strong><br />
+<strong>pause</strong></span></p>
+
+<p dir="rtl" style="text-align:justify"><img alt="" src="https://tradicoders.ir/articles/assets/Articles/06-2.jpg" style="border-style:solid; border-width:2px; float:left; height:393px; margin-left:15px; margin-right:15px; width:322px" /><br />
+<span style="font-size:20px">در خط دوم از فایلی که مشاهده می&zwnj;کنید، بعد از -o آدرس Pool URL را مشاهده می&zwnj;کنید که بسته به محل اقامت باید یکی از آدرس&zwnj;های زیر را به جای آن وارد کنید:<br />
+<strong>اگر ساکن آمریکا هستید: &nbsp;rx-us.unmineable.com:3333</strong><br />
+<strong>اگر ساکن اروپا هستید: &nbsp;rx-eu.unmineable.com:3333</strong><br />
+<strong>اگر ساکن آسیا هستید: &nbsp;rx-asia.unmineable.com:3333</strong></span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">پس از انجام این کار، در خط سوم باید آدرس کیف پول خود را وارد &zwnj;کنید؛ که همان آدرسی است که از مرحله&zwnj;ی اول کپی کرده&zwnj;اید. این آدرس را بعد از <em>SHIB:</em> و قبل از نقطه قرار دهید. ساختار کلی آدرس شما باید به صورت زیر باشد:<br />
+<strong>[COIN]:[Wallet address].[workerID]#[Code to lower mining fee]</strong></span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">کدی که پس از علامت هشتگ می&zwnj;آید، از اهمیت بالایی برخوردار است؛ زیرا ارزی که با این کد استخراج می&zwnj;شود هزینه&zwnj;ی استخراج را بین ۱ تا ۰.۷۵ درصد کاهش می&zwnj;دهد. می&zwnj;توانید برای شروع استخراج شیبا از کد <em><strong>g4xp-im3g</strong></em> استفاده کنید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">اکنون فایل ویرایش شده را به&zwnj;عنوان Administrator اجرا کنید. اگر همه چیز درست پیش رفته باشید، در این مرحله باید XMRig در حال اجرا باشد و شما در حال استخراج شیبا باشید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px"><span style="color:#16a085"><strong>مرحله&zwnj;ی سوم: وارد Unmineable شوید و وضعیت رمزارز استخراجی خود را ببینید</strong></span><br />
+<a href="https://unmineable.com/">Unmineable.com</a> به شما اجازه می&zwnj;دهد که با استفاده از کامپیوتر شخصی خود استخراج را انجام دهید و پرداختی به شما در واقع به ارزی است که شما انتخاب می&zwnj;کنید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">به خاطر دارید که در زمان راه&zwnj;اندازی سیستم آدرس خود را وارد کردید؟ به این ترتیب شما به Unmineable اجازه می&zwnj;دهید که بداند هزینه&zwnj;ی استخراج شما را به چه رمزارزی پرداخت کند. در این مثال ما شیبا را انتخاب کردیم و آدرسی که شیبا باید در آنجا بنشیند نیز ذکر شده بود.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">برای اینکه بتوانید دارایی خود را بررسی کنید، باید وارد Unmineable شوید و رمزارز مورد دلخواه خود برای استخراج را انتخاب کنید. در قسمتی که از شما آدرس می&zwnj;خواهد، آدرس خود را وارد کنید و به این ترتیب می&zwnj;توانید ببینید که چقدر تا کنون استخراج کرده&zwnj;اید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">تبریک می&zwnj;گوییم؛ اکنون شما به یک استخراج&zwnj;کننده&zwnj;ی رمزارز تبدیل شده&zwnj;اید.</span></p>
+
+<p dir="rtl" style="text-align:justify"><br />
+<span style="font-size:20px">پیشنهاد می&zwnj;کنیم نرم&zwnj;افزارهای مخصوص پایش دمای CPU را دانلود کنید تا از آسیب رسیدن به کامپیوتر خود پیشگیری کنید. تلاش کنید دمای CPU از ۹۰ درجه&zwnj;ی سانتی&zwnj;گراد تجاوز نکند. اگر با لپ&zwnj;تاپ کار می&zwnj;کنید، بهتر است از سخت&zwnj;افزارهای اضافی خنک&zwnj;کننده&zwnj;ی سیستم استفاده کنید.&nbsp;</span></p>
+
+    </div>
+</div>
+<!--Project List-->
+
+<script>
+    function tl_top1()
+    {
+        document.getElementById('tl_top1').style.background='#00404b';
+        document.getElementById('tl_top2').style.background='#00849a';
+        document.getElementById('tl_top3').style.background='#00849a';
+        document.getElementById('tl_top4').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_1').style.display='block';
+        document.getElementById('tl_2').style.display='none';
+        document.getElementById('tl_3').style.display='none';
+        document.getElementById('tl_4').style.display='none';
+    }
+    function tl_top2()
+    {
+        document.getElementById('tl_top2').style.background='#00404b';
+        document.getElementById('tl_top1').style.background='#00849a';
+        document.getElementById('tl_top3').style.background='#00849a';
+        document.getElementById('tl_top4').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_2').style.display='block';
+        document.getElementById('tl_1').style.display='none';
+        document.getElementById('tl_3').style.display='none';
+        document.getElementById('tl_4').style.display='none';
+    }
+    function tl_top3()
+    {
+        document.getElementById('tl_top3').style.background='#00404b';
+        document.getElementById('tl_top1').style.background='#00849a';
+        document.getElementById('tl_top2').style.background='#00849a';
+        document.getElementById('tl_top4').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_3').style.display='block';
+        document.getElementById('tl_1').style.display='none';
+        document.getElementById('tl_2').style.display='none';
+        document.getElementById('tl_4').style.display='none';
+    }
+    function tl_top4()
+    {
+        document.getElementById('tl_top4').style.background='#00404b';
+        document.getElementById('tl_top1').style.background='#00849a';
+        document.getElementById('tl_top2').style.background='#00849a';
+        document.getElementById('tl_top3').style.background='#00849a';
+        ////////////////////////////////////////
+        document.getElementById('tl_4').style.display='block';
+        document.getElementById('tl_1').style.display='none';
+        document.getElementById('tl_2').style.display='none';
+        document.getElementById('tl_3').style.display='none';
+    }
+    function Searchbox() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUL');
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display ='';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    function Searchbox2() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput2');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUL2');
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display ='';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    function Searchbox3() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput3');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById('myUL3');
+        li = ul.getElementsByTagName('li');
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName('a')[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display ='';
+            } else {
+                li[i].style.display = 'none';
+            }
+        }
+    }
+    function MProjectinfo()
+    {
+        document.getElementById('MProjectinfo').style.display='block';
+    }
+    function downloadinfo()
+    {
+        document.getElementById('downloadinfo').style.display='block';
+    }
+    function login()
+    {
+        document.getElementById('loginform').style.display='block';
+        document.getElementById('signupform').style.display='none';
+        document.getElementById('videoform').style.display='none';
+    }
+    function signup()
+    {
+        document.getElementById('signupform').style.display='block';
+        document.getElementById('loginform').style.display='none';
+        document.getElementById('videoform').style.display='none';
+    }
+    function video()
+    {
+        document.getElementById('videoform').style.display='block';
+        document.getElementById('loginform').style.display='none';
+        document.getElementById('signupform').style.display='none';
+    }
+    function OpenForm(v) {
+        document.getElementById(v).style.display = 'block';
+    }
+    function closeForm(v) {
+        document.getElementById(v).style.display = 'none';
+    }
+</script>
+</body>
+</html>
+        

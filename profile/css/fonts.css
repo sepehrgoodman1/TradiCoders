@@ -1,0 +1,16 @@
+@font-face{
+    font-family: IranSans;
+    src: url("../assets/fonts/Iranian\ Sans.ttf");
+}
+@font-face{
+    font-family: IranYekan;
+    src: url("../assets/fonts/IranYekan/Yekan.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}

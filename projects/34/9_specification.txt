@@ -1,0 +1,3 @@
+EA structure
+
+MACD Logic can do trade if MACD Cross Specific Level in macd indicator

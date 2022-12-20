@@ -1,0 +1,178 @@
+.OriginWrapper {
+  padding: 20px 160px;
+}
+.VersionCard {
+  padding: 5px;
+  background: #e8e8e8;
+  color: #8b8b8b;
+  padding: 4px 10px 5px 10px;
+  margin-right: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  position: relative;
+  bottom: 7px;
+}
+.P_ImageAndSide {
+  display: flex;
+  margin-top: 40px;
+}
+.P_ImgCard {
+  flex: 1;
+}
+.CardImg {
+  width: 100%;
+  border-radius: 4px;
+}
+.DetailCard {
+  width: 400px;
+  padding: 25px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.088);
+  border-radius: 4px;
+  margin-left: 30px;
+}
+.P_Sell {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.Sell {
+  text-align: center;
+}
+.Devider {
+  display: inline-block;
+  height: 100px;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  transform: translateX(-50%);
+  background-color: rgb(0 0 0 / 4%);
+}
+.IconDetailCard {
+  color: var(--NumberOneBg);
+  margin-left: 6px;
+}
+.TextDetalCard {
+  color: rgba(0, 0, 0, 0.421);
+  font-size: 17px;
+  margin-top: 5px;
+}
+.P_PriceCard {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.BtnCardShop {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  background-color: var(--NumberOneBg);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 17px;
+  margin-top: 30px;
+}
+.BtnCardShop:hover {
+  background-color: var(--NumberOneBgHover);
+}
+.P_Share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ShareBtn {
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+  border-radius: 5px;
+}
+.ShareBtn:hover {
+  background-color: rgba(0, 0, 0, 0.073);
+}
+.DemoVersion {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.DemoVersion:hover {
+  opacity: 0.7;
+}
+.IconDown {
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
+.TitleOfTabs {
+  display: flex;
+  border-bottom: 2px solid #0000002e;
+  padding-bottom: 10px;
+}
+.StartDesk {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 8px;
+}
+.C_TitleOfTabs {
+  padding: 5px 20px;
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.1s;
+}
+.C_TitleOfTabs:hover {
+  background-color: white;
+}
+.ActiveTitle {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.068);
+  background-color: white;
+}
+.TitleTozihat {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.DeskTozihat {
+  font-size: 16px;
+}
+.TitleCrd {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+  .OriginWrapper {
+    padding: 20px;
+  }
+  .TitleCrd {
+    font-size: 24px;
+  }
+  .P_ImageAndSide {
+    flex-direction: column;
+  }
+  .DetailCard {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .TitleOfTabs {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .TitleTozihat {
+    font-size: 27px;
+  }
+}

@@ -1,0 +1,4 @@
+EA structure
+
+This logic can detect cross of Stochastic and overbought or oversold level
+MACD Logic can do trade if MACD Cross Specific Level in macd indicator

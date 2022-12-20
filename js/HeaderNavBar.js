@@ -2,9 +2,12 @@ const IconClose = document.querySelector(".CloseIcon");
 const IconMenu = document.querySelector(".IconToggle");
 const MobileNav = document.querySelector(".P_ItemNavbar");
 
-IconClose.addEventListener('click',()=>{
+if(IconClose){
+  IconClose.addEventListener('click',()=>{
     MobileNav.classList.remove("ShowNav");
 });
+}
+
 IconMenu.addEventListener('click',()=>{
     MobileNav.classList.add("ShowNav");
 })
@@ -18,3 +21,7 @@ document.addEventListener("click", function(event) {
   // If user clicks outside the element, hide it!
   box.classList.remove("ShowNav")
 })
+
+function openLink(link) {
+    window.open(link, "_self");
+}
